@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glamour — Quiet luxury, Mediterranean cut</title>
+  <meta name="description" content="Glamour is a bilingual fashion house for men and women from Limassol.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrap topbar">
+    <div class="announcement" data-i="ann"></div>
+    <div>CY / EU</div>
+  </div>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <nav class="nav-links">
+        <a href="#shop" data-i="shop"></a>
+        <a href="#lookbook" data-i="lookbook"></a>
+        <a href="#partners" data-i="partners"></a>
+        <a href="#house" data-i="about"></a>
+      </nav>
+      <a class="brand" href="#">GLAMOUR</a>
+      <div class="nav-actions">
+        <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" data-lang="el" onclick="setLang('el')">EL</button>
+        <button class="icon-btn" onclick="openCart()"><span data-i="bag"></span> <span id="count">0</span></button>
+      </div>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="kicker" data-i="heroKicker"></div>
+        <h1 data-i="heroTitle"></h1>
+        <p data-i="heroText"></p>
+        <div class="hero-actions">
+          <a class="cta" href="#shop" data-i="shopMen"></a>
+          <a class="icon-btn" href="#shop" data-i="shopWomen"></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1400&q=80" alt="Glamour editorial">
+        <div class="hero-card"><strong>SS26</strong><p>Limassol light. European cut.</p></div>
+      </div>
+    </section>
+    <section class="section" id="shop">
+      <div class="section-head">
+        <div><h2 data-i="drop"></h2><p style="color:var(--muted)" data-i="dropSub"></p></div>
+        <div class="filters">
+          <button class="chip active" onclick="setFilter('all', this)" data-i="all"></button>
+          <button class="chip" onclick="setFilter('men', this)" data-i="men"></button>
+          <button class="chip" onclick="setFilter('women', this)" data-i="women"></button>
+        </div>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+    <section class="section" id="partners">
+      <div class="partners-box">
+        <h2 data-i="partTitle"></h2>
+        <p data-i="partText"></p>
+        <div class="model">
+          <article><h3 data-i="m1t"></h3><p data-i="m1d"></p></article>
+          <article><h3 data-i="m2t"></h3><p data-i="m2d"></p></article>
+          <article><h3 data-i="m3t"></h3><p data-i="m3d"></p></article>
+        </div>
+        <div class="brand-grid" id="brands"></div>
+        <form class="partner-form" onsubmit="partnerApply(event)">
+          <input name="brand" required data-ph="pBrand">
+          <input name="email" type="email" required data-ph="email">
+          <textarea name="note" rows="3" data-ph="pNote"></textarea>
+          <button class="cta" data-i="pApply"></button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap foot">
+      <div><a class="brand" href="#">GLAMOUR</a><p>Limassol · Cyprus</p></div>
+      <div><h4>Contact</h4><a href="mailto:hello@glamour.cy">hello@glamour.cy</a></div>
+    </div>
+  </footer>
+  <div class="drawer" id="drawer" onclick="if(event.target.id==='drawer')closeDrawer()"><div class="drawer-panel" id="drawer-body"></div></div>
+  <div class="cart" id="cart" onclick="if(event.target.id==='cart')closeCart()">
+    <div class="cart-panel">
+      <button class="icon-btn" onclick="closeCart()" data-i="close"></button>
+      <h2 data-i="bag"></h2>
+      <div id="cart-body"></div>
+      <p style="margin:16px 0"><span data-i="total"></span> <strong id="cart-total">€0</strong></p>
+      <button class="cta" style="width:100%" data-i="checkout"></button>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
