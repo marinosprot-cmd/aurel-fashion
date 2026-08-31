@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glamour — Quiet luxury, Mediterranean cut</title>
-  <meta name="description" content="Glamour is a bilingual fashion house for men and women from Limassol.">
+  <meta name="description" content="Glamour is a bilingual fashion house for men and women. Linen, tailoring, silk and knit from Limassol.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -19,6 +19,8 @@
     <div class="wrap nav-inner">
       <nav class="nav-links">
         <a href="#shop" data-i="shop"></a>
+        <a href="#shop" onclick="setFilter('men', document.querySelector('[data-filter=men]'))" data-i="men"></a>
+        <a href="#shop" onclick="setFilter('women', document.querySelector('[data-filter=women]'))" data-i="women"></a>
         <a href="#lookbook" data-i="lookbook"></a>
         <a href="#partners" data-i="partners"></a>
         <a href="#house" data-i="about"></a>
@@ -38,25 +40,57 @@
         <h1 data-i="heroTitle"></h1>
         <p data-i="heroText"></p>
         <div class="hero-actions">
-          <a class="cta" href="#shop" data-i="shopMen"></a>
-          <a class="icon-btn" href="#shop" data-i="shopWomen"></a>
+          <a class="cta" href="#shop" data-i="shopMen" onclick="setFilter('men', document.querySelector('[data-filter=men]'))"></a>
+          <a class="icon-btn" href="#shop" data-i="shopWomen" onclick="setFilter('women', document.querySelector('[data-filter=women]'))"></a>
         </div>
       </div>
       <div class="hero-visual">
         <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1400&q=80" alt="Glamour editorial">
-        <div class="hero-card"><strong>SS26</strong><p>Limassol light. European cut.</p></div>
+        <div class="hero-card"><strong>SS26</strong><p data-i="heroCard"></p></div>
       </div>
     </section>
     <section class="section" id="shop">
       <div class="section-head">
-        <div><h2 data-i="drop"></h2><p style="color:var(--muted)" data-i="dropSub"></p></div>
+        <div>
+          <h2 data-i="drop"></h2>
+          <p style="color:var(--muted)" data-i="dropSub"></p>
+        </div>
         <div class="filters">
-          <button class="chip active" onclick="setFilter('all', this)" data-i="all"></button>
-          <button class="chip" onclick="setFilter('men', this)" data-i="men"></button>
-          <button class="chip" onclick="setFilter('women', this)" data-i="women"></button>
+          <button class="chip active" data-filter="all" onclick="setFilter('all', this)" data-i="all"></button>
+          <button class="chip" data-filter="men" onclick="setFilter('men', this)" data-i="men"></button>
+          <button class="chip" data-filter="women" onclick="setFilter('women', this)" data-i="women"></button>
+          <button class="chip" data-filter="shirts" onclick="setFilter('shirts', this)" data-i="shirts"></button>
+          <button class="chip" data-filter="tailoring" onclick="setFilter('tailoring', this)" data-i="tailoring"></button>
+          <button class="chip" data-filter="dresses" onclick="setFilter('dresses', this)" data-i="dresses"></button>
+          <button class="chip" data-filter="knit" onclick="setFilter('knit', this)" data-i="knit"></button>
         </div>
       </div>
       <div class="grid" id="grid"></div>
+    </section>
+    <section class="section" id="lookbook">
+      <div class="split">
+        <article class="panel">
+          <img src="https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?auto=format&fit=crop&w=1200&q=80" alt="Men lookbook">
+          <div class="panel-copy"><h3 data-i="menCol"></h3><p data-i="menLine"></p></div>
+        </article>
+        <article class="panel">
+          <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1200&q=80" alt="Women lookbook">
+          <div class="panel-copy"><h3 data-i="womenCol"></h3><p data-i="womenLine"></p></div>
+        </article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="quiz">
+        <h2 data-i="quizTitle"></h2>
+        <p data-i="quizText"></p>
+        <div class="quiz-options">
+          <button onclick="quiz('coast')" data-i="q1"></button>
+          <button onclick="quiz('city')" data-i="q2"></button>
+          <button onclick="quiz('night')" data-i="q3"></button>
+          <button onclick="quiz('knit')" data-i="q4"></button>
+        </div>
+        <div class="quiz-result" id="quiz-result"></div>
+      </div>
     </section>
     <section class="section" id="partners">
       <div class="partners-box">
@@ -71,8 +105,50 @@
         <form class="partner-form" onsubmit="partnerApply(event)">
           <input name="brand" required data-ph="pBrand">
           <input name="email" type="email" required data-ph="email">
+          <select name="model">
+            <option value="consignment" data-i="m2t"></option>
+            <option value="affiliate" data-i="m1t"></option>
+            <option value="wholesale" data-i="m3t"></option>
+          </select>
           <textarea name="note" rows="3" data-ph="pNote"></textarea>
           <button class="cta" data-i="pApply"></button>
+        </form>
+      </div>
+    </section>
+    <section class="section" id="house">
+      <div class="about">
+        <h2 data-i="aboutTitle"></h2>
+        <p data-i="aboutText"></p>
+        <div class="model" style="margin-top:28px">
+          <article><h3 data-i="trust1"></h3><p>Limassol · Germasogeia / Marina</p></article>
+          <article><h3 data-i="trust2"></h3><p>One site, two languages.</p></article>
+          <article><h3 data-i="trust3"></h3><p>marinosprot@gmail.com</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="contact">
+      <div class="about">
+        <h2 data-i="contactTitle"></h2>
+        <p data-i="contactText"></p>
+        <p><a href="mailto:marinosprot@gmail.com">marinosprot@gmail.com</a> · <a href="https://wa.me/35799661190">WhatsApp</a> · <a href="https://www.tiktok.com/@glamour.cy">TikTok</a> · <a href="https://www.facebook.com/profile.php?id=61593987297151">Facebook</a></p>
+      </div>
+    </section>
+    <section class="section" id="policy">
+      <div class="partners-box">
+        <h2 data-i="polTitle"></h2>
+        <div class="model">
+          <article><h3 data-i="polShip"></h3><p data-i="polShipD"></p></article>
+          <article><h3 data-i="polRet"></h3><p data-i="polRetD"></p></article>
+          <article><h3 data-i="polPriv"></h3><p data-i="polPrivD"></p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="newsletter">
+        <div><h2 data-i="newsTitle"></h2><p data-i="newsText"></p></div>
+        <form onsubmit="newsletter(event)">
+          <input type="email" required data-ph="email">
+          <button class="cta" data-i="join"></button>
         </form>
       </div>
     </section>
@@ -80,7 +156,9 @@
   <footer>
     <div class="wrap foot">
       <div><a class="brand" href="#">GLAMOUR</a><p>Limassol · Cyprus</p></div>
-      <div><h4>Contact</h4><a href="mailto:hello@glamour.cy">hello@glamour.cy</a></div>
+      <div><h4 data-i="shop"></h4><a href="#shop" data-i="men"></a><a href="#shop" data-i="women"></a></div>
+      <div><h4>Contact</h4><a href="mailto:marinosprot@gmail.com">marinosprot@gmail.com</a><a href="https://wa.me/35799661190">+357 99 661190</a></div>
+      <div><h4>Follow</h4><a href="https://www.tiktok.com/@glamour.cy" target="_blank" rel="noopener">TikTok</a><a href="https://www.facebook.com/profile.php?id=61593987297151" target="_blank" rel="noopener">Facebook</a></div>
     </div>
   </footer>
   <div class="drawer" id="drawer" onclick="if(event.target.id==='drawer')closeDrawer()"><div class="drawer-panel" id="drawer-body"></div></div>
