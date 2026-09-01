@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glamour — Quiet luxury, Mediterranean cut</title>
-  <meta name="description" content="Glamour is a bilingual fashion house for men and women. Linen, tailoring, silk and knit from Limassol.">
+  <meta name="description" content="Glamour is a bilingual fashion house for men and women in Limassol. Partner brands, Cyprus and EU.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -29,7 +29,6 @@
       <div class="nav-actions">
         <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
         <button class="lang-btn" data-lang="el" onclick="setLang('el')">EL</button>
-        <button class="icon-btn" onclick="openCart()"><span data-i="bag"></span> <span id="count">0</span></button>
       </div>
     </div>
   </header>
@@ -106,8 +105,8 @@
           <input name="brand" required data-ph="pBrand">
           <input name="email" type="email" required data-ph="email">
           <select name="model">
-            <option value="consignment" data-i="m2t"></option>
             <option value="affiliate" data-i="m1t"></option>
+            <option value="consignment" data-i="m2t"></option>
             <option value="wholesale" data-i="m3t"></option>
           </select>
           <textarea name="note" rows="3" data-ph="pNote"></textarea>
@@ -120,7 +119,7 @@
         <h2 data-i="aboutTitle"></h2>
         <p data-i="aboutText"></p>
         <div class="model" style="margin-top:28px">
-          <article><h3 data-i="trust1"></h3><p>Limassol · Germasogeia / Marina</p></article>
+          <article><h3 data-i="trust1"></h3><p>Limassol</p></article>
           <article><h3 data-i="trust2"></h3><p>One site, two languages.</p></article>
           <article><h3 data-i="trust3"></h3><p>marinosprot@gmail.com</p></article>
         </div>
@@ -162,15 +161,6 @@
     </div>
   </footer>
   <div class="drawer" id="drawer" onclick="if(event.target.id==='drawer')closeDrawer()"><div class="drawer-panel" id="drawer-body"></div></div>
-  <div class="cart" id="cart" onclick="if(event.target.id==='cart')closeCart()">
-    <div class="cart-panel">
-      <button class="icon-btn" onclick="closeCart()" data-i="close"></button>
-      <h2 data-i="bag"></h2>
-      <div id="cart-body"></div>
-      <p style="margin:16px 0"><span data-i="total"></span> <strong id="cart-total">€0</strong></p>
-      <button class="cta" style="width:100%" data-i="checkout"></button>
-    </div>
-  </div>
   <script src="js/app.js"></script>
   <script src="js/shop.js"></script>
 </body>
