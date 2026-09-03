@@ -19,10 +19,9 @@
     <div class="wrap nav-inner">
       <nav class="nav-links">
         <a href="#shop" data-i="shop"></a>
-        <a href="#shop" onclick="setFilter('men', document.querySelector('[data-filter=men]'))" data-i="men"></a>
-        <a href="#shop" onclick="setFilter('women', document.querySelector('[data-filter=women]'))" data-i="women"></a>
+        <a href="#houses" data-i="houses"></a>
         <a href="#lookbook" data-i="lookbook"></a>
-        <a href="#trainers">Trainers</a>
+        <a href="#trainers">Viaduct</a>
         <a href="#partners" data-i="partners"></a>
         <a href="#house" data-i="about"></a>
       </nav>
@@ -49,6 +48,14 @@
         <div class="hero-card"><strong>SS26</strong><p data-i="heroCard"></p></div>
       </div>
     </section>
+    <section class="section" id="houses">
+      <div class="partners-box">
+        <h2 data-i="housesTitle"></h2>
+        <p style="color:var(--muted);max-width:640px" data-i="housesText"></p>
+        <div class="brand-grid" id="brands"></div>
+        <p style="margin-top:20px"><a class="cta" href="#trainers">Viaduct Clothing — shop on partner store</a></p>
+      </div>
+    </section>
     <section class="section" id="shop">
       <div class="section-head">
         <div>
@@ -57,12 +64,11 @@
         </div>
         <div class="filters">
           <button class="chip active" data-filter="all" onclick="setFilter('all', this)" data-i="all"></button>
+          <button class="chip" data-filter="glamour" onclick="setFilter('glamour', this)">Glamour</button>
+          <button class="chip" data-filter="mare" onclick="setFilter('mare', this)">Mare</button>
+          <button class="chip" data-filter="nisi" onclick="setFilter('nisi', this)">Nisi</button>
           <button class="chip" data-filter="men" onclick="setFilter('men', this)" data-i="men"></button>
           <button class="chip" data-filter="women" onclick="setFilter('women', this)" data-i="women"></button>
-          <button class="chip" data-filter="shirts" onclick="setFilter('shirts', this)" data-i="shirts"></button>
-          <button class="chip" data-filter="tailoring" onclick="setFilter('tailoring', this)" data-i="tailoring"></button>
-          <button class="chip" data-filter="dresses" onclick="setFilter('dresses', this)" data-i="dresses"></button>
-          <button class="chip" data-filter="knit" onclick="setFilter('knit', this)" data-i="knit"></button>
         </div>
       </div>
       <div class="grid" id="grid"></div>
@@ -81,8 +87,8 @@
     </section>
     <section class="section" id="trainers">
       <div class="partners-box">
-        <h2>Sport & trainers</h2>
-        <p style="color:var(--muted);max-width:560px">Selected pieces from Viaduct Clothing. You complete the purchase on their store.</p>
+        <h2>Viaduct Clothing</h2>
+        <p style="color:var(--muted);max-width:560px">Partner house. Selected sport and trainers. You complete the purchase on their store.</p>
         <div class="affiliate-row" style="display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start;margin:28px 0">
           <a rel="sponsored" href="https://www.awin1.com/cread.php?s=4719807&v=125096&q=5997248&r=3068705"><img src="https://www.awin1.com/cshow.php?s=4719807&v=125096&q=5997248&r=3068705" alt="New Balance jacket" width="300" height="250"></a>
           <a rel="sponsored" href="https://www.awin1.com/cread.php?s=4719793&v=125096&q=599723&r=3068705"><img src="https://www.awin1.com/cshow.php?s=4719793&v=125096&q=599723&r=3068705" alt="Nike tracksuit" width="300" height="250"></a>
@@ -109,20 +115,9 @@
       <div class="partners-box">
         <h2 data-i="partTitle"></h2>
         <p data-i="partText"></p>
-        <div class="model">
-          <article><h3 data-i="m1t"></h3><p data-i="m1d"></p></article>
-          <article><h3 data-i="m2t"></h3><p data-i="m2d"></p></article>
-          <article><h3 data-i="m3t"></h3><p data-i="m3d"></p></article>
-        </div>
-        <div class="brand-grid" id="brands"></div>
         <form class="partner-form" onsubmit="partnerApply(event)">
           <input name="brand" required data-ph="pBrand">
           <input name="email" type="email" required data-ph="email">
-          <select name="model">
-            <option value="affiliate" data-i="m1t"></option>
-            <option value="consignment" data-i="m2t"></option>
-            <option value="wholesale" data-i="m3t"></option>
-          </select>
           <textarea name="note" rows="3" data-ph="pNote"></textarea>
           <button class="cta" data-i="pApply"></button>
         </form>
