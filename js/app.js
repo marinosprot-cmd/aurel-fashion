@@ -9,8 +9,8 @@ const I18N = {
     heroCard: "Limassol light. European cut.",
     drop: "The first drop", dropSub: "House edit in progress. Sample photography until partner and studio images are cleared.",
     all: "All", shirts: "Shirts", tailoring: "Tailoring", dresses: "Dresses", knit: "Knit",
-    houses: "Houses", housesTitle: "Houses and designers",
-    housesText: "Glamour is a curated multi-house edit. The house collection sits beside partner stores. You buy partner pieces on their site.",
+    houses: "Houses", housesTitle: "About the houses",
+    housesText: "Each line has a reason to sit here. Glamour is the house. Mare and Nisi are edits inside it. Viaduct is the first partner store — you buy on their site.",
     menCol: "Men", womenCol: "Women",
     menLine: "Sharp, breathable, unforced.", womenLine: "Sculpted ease. Evening-ready.",
     quizTitle: "Find your cut", quizText: "A 10-second stylist. Choose the mood — we recommend a first edit.",
@@ -47,8 +47,8 @@ const I18N = {
     heroCard: "Φως Λεμεσού. Ευρωπαϊκή γραμμή.",
     drop: "Η πρώτη συλλογή", dropSub: "Δειγματικές εικόνες μέχρι να μπουν οι φωτογραφίες φίρμας.",
     all: "Όλα", shirts: "Πουκάμισα", tailoring: "Ραπτική", dresses: "Φορέματα", knit: "Πλεκτά",
-    houses: "Οίκοι", housesTitle: "Οίκοι και σχεδιαστές",
-    housesText: "Η Glamour είναι επιμελημένη επιλογή. Η συλλογή του οίκου δίπλα σε φίρμες. Η αγορά στη φίρμα γίνεται στο δικό της site.",
+    houses: "Οίκοι", housesTitle: "Σχετικά με τους οίκους",
+    housesText: "Κάθε γραμμή έχει λόγο. Η Glamour είναι ο οίκος. Mare και Nisi είναι επιλογές μέσα του. Η Viaduct είναι η πρώτη φίρμα — η αγορά στο δικό της site.",
     menCol: "Άνδρες", womenCol: "Γυναίκες",
     menLine: "Καθαρή γραμμή.", womenLine: "Έτοιμη για βράδυ.",
     quizTitle: "Βρες τη γραμμή σου", quizText: "Διάλεξε διάθεση.",
@@ -77,7 +77,25 @@ const I18N = {
 };
 
 const BRANDS = [
-  { id: "glamour", name: "Glamour", model: "own", en: "House collection. Linen, tailoring, silk.", el: "Συλλογή οίκου." },
-  { id: "mare", name: "Mare", model: "line", en: "Menswear line inside the Limassol edit.", el: "Ανδρική γραμμή στην επιλογή." },
-  { id: "nisi", name: "Nisi", model: "line", en: "Womenswear line inside the Limassol edit.", el: "Γυναικεία γραμμή στην επιλογή." }
+  {
+    id: "glamour",
+    name: "Glamour",
+    model: "own",
+    en: "The house. Founded in Limassol. Linen, tailoring and silk cut for heat and city nights. We chose this line because it is the reason the site exists — Mediterranean quiet luxury, bilingual, not a generic catalogue.",
+    el: "Ο οίκος. Ιδρύθηκε στη Λεμεσό. Λινό, ραπτική και μετάξι για ζέστη και βράδυ πόλης. Ήσυχη πολυτέλεια, όχι γενικός κατάλογος."
+  },
+  {
+    id: "mare",
+    name: "Mare",
+    model: "line",
+    en: "The menswear cut inside the house. High rise, unstructured jackets, knit that holds heat without weight. Chosen for harbour days and late tables — not costume, not logo sport.",
+    el: "Η ανδρική γραμμή του οίκου. Υψηλό καθιστό, μαλακά σακάκια, πλεκτό χωρίς βάρος. Για μέρα στο λιμάνι και βράδυ τραπέζι — όχι στολή, όχι λόγο."
+  },
+  {
+    id: "nisi",
+    name: "Nisi",
+    model: "line",
+    en: "The womenswear cut inside the house. Bias slips, column dresses, long knit. Chosen for Aegean light and gallery nights — sculpted, not loud.",
+    el: "Η γυναικεία γραμμή του οίκου. Slip, φορέματα στήλη, μακρύ πλεκτό. Για φως Αιγαίου και βράδυ γκαλερί — γλυπτό, όχι φωναχτό."
+  }
 ];
