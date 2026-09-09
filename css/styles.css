@@ -28,15 +28,18 @@ a { color: inherit; text-decoration: none; }
 .icon-btn, .lang-btn, .cta { border: 1px solid var(--line); background: transparent; cursor: pointer; border-radius: 0; padding: 9px 16px; letter-spacing: .12em; text-transform: uppercase; font-size: 11px; }
 .cta { background: var(--ink); color: var(--white); border-color: var(--ink); }
 .lang-btn.active { background: var(--ink); color: var(--white); }
-.hero { display: grid; grid-template-columns: .85fr 1.15fr; min-height: 88vh; gap: 56px; padding: 28px 0 12px; align-items: center; }
-.hero-copy { padding: 8px 0 24px; }
+.hero-cover { position: relative; min-height: 88vh; display: block; padding: 0; overflow: hidden; }
+.hero-cover > img { width: 100%; height: 88vh; object-fit: cover; object-position: center 20%; }
+.hero-overlay { position: absolute; inset: 0; display: flex; align-items: flex-end; padding-bottom: 72px; background: linear-gradient(90deg, rgba(20,17,15,.55) 0%, rgba(20,17,15,.12) 55%, transparent 80%); }
+.hero-cover .hero-copy { padding: 0 0 8px; max-width: 560px; }
+.hero-cover .kicker { color: #e8dcc8; }
+.hero-cover h1 { color: #fffcf8; text-shadow: 0 12px 40px rgba(0,0,0,.35); }
+.hero-cover p { color: rgba(255,252,248,.82); }
+.hero-cover .icon-btn { border-color: rgba(255,252,248,.45); color: #fffcf8; }
 .kicker { letter-spacing: .32em; text-transform: uppercase; font-size: 11px; color: var(--accent); margin-bottom: 22px; }
 .hero h1 { font-family: "Cormorant Garamond", serif; font-size: clamp(56px, 7vw, 96px); font-weight: 500; line-height: .9; margin-bottom: 24px; letter-spacing: -.02em; }
-.hero p { max-width: 420px; color: var(--muted); font-size: 16px; margin-bottom: 36px; font-weight: 300; }
+.hero p { max-width: 420px; font-size: 16px; margin-bottom: 36px; font-weight: 300; }
 .hero-actions { display: flex; gap: 10px; flex-wrap: wrap; }
-.hero-visual { position: relative; border-radius: 0; overflow: hidden; min-height: 680px; box-shadow: none; }
-.hero-visual img { width: 100%; height: 100%; object-fit: cover; }
-.hero-card { position: absolute; left: 0; bottom: 0; background: rgba(243,238,230,.92); backdrop-filter: blur(10px); padding: 18px 20px; border-radius: 0; max-width: 240px; }
 .section { padding: 96px 0; }
 .section-head { display: flex; justify-content: space-between; align-items: end; gap: 16px; margin-bottom: 36px; }
 .section-head h2 { font-family: "Cormorant Garamond", serif; font-size: 44px; font-weight: 500; }
@@ -85,14 +88,13 @@ footer { padding: 56px 0 32px; border-top: 1px solid var(--line); color: var(--m
 .cart-item { display: grid; grid-template-columns: 72px 1fr auto; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
 .cart-item img { width: 72px; height: 90px; object-fit: cover; }
 @media (max-width: 980px) {
-  .hero, .split, .quiz-options, .newsletter, .foot { grid-template-columns: 1fr; }
+  .split, .quiz-options, .newsletter, .foot { grid-template-columns: 1fr; }
   .grid { grid-template-columns: 1fr 1fr; }
   .nav-links { display: none; }
-  .hero { min-height: auto; gap: 28px; }
-  .hero-visual { min-height: 460px; }
+  .hero-cover > img, .hero-cover { min-height: 72vh; height: 72vh; }
+  .hero-overlay { background: linear-gradient(180deg, transparent 20%, rgba(20,17,15,.7) 100%); }
 }
 @media (max-width: 640px) {
-  .hero, .newsletter, .foot, .quiz-options, .model, .brand-grid { grid-template-columns: 1fr; }
-  .hero-visual { min-height: 420px; }
+  .newsletter, .foot, .quiz-options, .model, .brand-grid { grid-template-columns: 1fr; }
   .wrap { width: min(1320px, calc(100% - 32px)); }
 }
