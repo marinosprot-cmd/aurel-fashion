@@ -1,0 +1,3 @@
+.look-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.look-grid .panel { min-height: 420px; }
+@media (max-width: 640px) { .look-grid { grid-template-columns: 1fr; } }
