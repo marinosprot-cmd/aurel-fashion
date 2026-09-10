@@ -101,3 +101,39 @@ footer { padding: 56px 0 32px; border-top: 1px solid var(--line); color: var(--m
   .wrap { width: min(1320px, calc(100% - 32px)); }
   .hero-cover h1 { font-size: 40px; }
 }
+
+
+/* Mobile: partner houses + navigation */
+.mobile-nav { display: none; }
+.houses-partners-title { font-family: "Cormorant Garamond", serif; font-size: 28px; font-weight: 500; margin-top: 36px; }
+.houses-partners-lead { color: var(--muted); max-width: 640px; margin-top: 8px; }
+.houses-partners { grid-template-columns: repeat(2, 1fr); }
+
+@media (max-width: 980px) {
+  .mobile-nav {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-bottom: 1px solid var(--line);
+    background: var(--bg);
+    position: sticky;
+    top: 0;
+    z-index: 40;
+  }
+  .mobile-nav a {
+    flex: 0 0 auto;
+    padding: 14px 16px;
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .model, .brand-grid, .houses-partners { grid-template-columns: 1fr; }
+  .partners-box { padding: 28px 20px; }
+  .section { padding: 56px 0; }
+}
+
+@media (max-width: 640px) {
+  .houses-partners { grid-template-columns: 1fr; }
+}
