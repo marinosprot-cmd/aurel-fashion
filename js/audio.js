@@ -1,5 +1,5 @@
 (function () {
-  var SRC = "https://archive.org/download/ChillAndLounge/chill_lounge1.mp3";
+  var SRC = "https://archive.org/download/royalty-free-music/Warm%20Mood%20(Lounge%20House).mp3";
   if (document.getElementById("audio-toggle")) return init();
   var link = document.createElement("link");
   link.rel = "stylesheet";
@@ -16,7 +16,7 @@
   audio.id = "house-audio";
   audio.loop = true;
   audio.preload = "none";
-  audio.volume = 0.32;
+  audio.volume = 0.34;
   var src = document.createElement("source");
   src.src = SRC;
   src.type = "audio/mpeg";
@@ -28,7 +28,7 @@
     var b = document.getElementById("audio-toggle");
     var a = document.getElementById("house-audio");
     if (!b || !a) return;
-    a.volume = 0.32;
+    a.volume = 0.34;
     b.addEventListener("click", function () {
       if (a.paused) {
         a.play().then(function () {
