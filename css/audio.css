@@ -1,0 +1,19 @@
+.audio-toggle {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 80;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(20,17,15,.18);
+  background: rgba(255,252,248,.92);
+  color: #14110f;
+  cursor: pointer;
+  letter-spacing: 0;
+  font-size: 16px;
+  box-shadow: 0 10px 30px rgba(20,17,15,.08);
+}
+.audio-toggle.is-on {
+  background: #14110f;
+  color: #fffcf8;
+}
