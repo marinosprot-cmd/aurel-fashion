@@ -25,3 +25,9 @@ function initSlides() {
 }
 window.initSlides = initSlides;
 initSlides();
+
+if (!document.querySelector('script[src="js/audio.js"]')) {
+  var s = document.createElement("script");
+  s.src = "js/audio.js";
+  document.body.appendChild(s);
+}
