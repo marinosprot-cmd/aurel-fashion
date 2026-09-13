@@ -1,4 +1,66 @@
-.look-one { width: 100%; min-height: 72vh; }
-.card-img { position: relative; }
-.card-img img.slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1s ease; }
-.card-img img.slide.on { opacity: 1; }
+/* NATALLIA CUT Lookbook — full-frame 9:16, caption below */
+#lookbook.section { padding-top: 48px; padding-bottom: 56px; }
+.lookbook-wrap {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.lookbook-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  background: #f5eee4; /* κρέμα letterbox */
+  overflow: hidden;
+  border-radius: 0;
+  touch-action: pan-y;
+  user-select: none;
+}
+.lookbook-stage img.look-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  pointer-events: none;
+}
+.lookbook-stage img.look-slide.on { opacity: 1; }
+.lookbook-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+.lookbook-dots button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 0;
+  padding: 0;
+  background: #c9bfb2;
+  cursor: pointer;
+}
+.lookbook-dots button[aria-current="true"] {
+  background: #1a1613;
+  transform: scale(1.15);
+}
+.lookbook-caption {
+  margin-top: 18px;
+  text-align: center;
+  color: var(--ink, #1a1613);
+}
+.lookbook-caption h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 500;
+  margin: 0 0 8px;
+  letter-spacing: 0.02em;
+}
+.lookbook-caption p {
+  margin: 0;
+  color: var(--muted, #6b635a);
+  font-size: 15px;
+  line-height: 1.45;
+}
