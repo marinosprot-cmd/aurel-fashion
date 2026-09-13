@@ -1,6 +1,66 @@
 const PRODUCTS = [
   {
-    id: "erv-geometric-harmony-linen-",
+    id: "erv-made-in-france-t-shirt-1",
+    brand: "erverte",
+    cat: "men",
+    type: "shirts",
+    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/T-shirt-noir_american_shot_53892.webp?v=1766006423",
+    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Fmade-in-france-t-shirt-1",
+    en: { name: "Black Cotton T-Shirt \u2013 Made in France", desc: "Shop on their store." },
+    el: { name: "Black Cotton T-Shirt \u2013 Made in France", desc: "Shop on their store." }
+  },
+  {
+    id: "erv-made-in-france-sweatshirt-1",
+    brand: "erverte",
+    cat: "men",
+    type: "knit",
+    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/Sweat-noir_american_shot_54693.webp?v=1766005750",
+    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Fmade-in-france-sweatshirt-1",
+    en: { name: "Black Organic Cotton Sweatshirt \u2013 Made in France", desc: "Shop on their store." },
+    el: { name: "Black Organic Cotton Sweatshirt \u2013 Made in France", desc: "Shop on their store." }
+  },
+  {
+    id: "erv-made-in-france-t-shirt",
+    brand: "erverte",
+    cat: "men",
+    type: "shirts",
+    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/T-shirt-bleu-electrique_american_shot_54710.webp?v=1766004526",
+    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Fmade-in-france-t-shirt",
+    en: { name: "Blue Cotton T-Shirt \u2013 Made in France", desc: "Shop on their store." },
+    el: { name: "Blue Cotton T-Shirt \u2013 Made in France", desc: "Shop on their store." }
+  },
+  {
+    id: "erv-bordeaux-cap-organic-cotton-made-in-",
+    brand: "erverte",
+    cat: "men",
+    type: "accessories",
+    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/edit_98434.webp?v=1778575329",
+    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Fbordeaux-cap-organic-cotton-made-in-france",
+    en: { name: "Bordeaux Cap \u2013 Organic Cotton, Made in France", desc: "Shop on their store." },
+    el: { name: "Bordeaux Cap \u2013 Organic Cotton, Made in France", desc: "Shop on their store." }
+  },
+  {
+    id: "erv-french-made-100-silk-mens-rose-savan",
+    brand: "erverte",
+    cat: "men",
+    type: "tailoring",
+    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/french-made-100-silk-savanna-print-pants-150014.jpg?v=1729606309",
+    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Ffrench-made-100-silk-mens-rose-savanna-print-pants",
+    en: { name: "French-Made 100% Silk Savanna Print Pants", desc: "Shop on their store." },
+    el: { name: "French-Made 100% Silk Savanna Print Pants", desc: "Shop on their store." }
+  },
+  {
+    id: "erv-french-made-thick-cold-wool-pleated-",
+    brand: "erverte",
+    cat: "men",
+    type: "tailoring",
+    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/french-made-thick-cold-wool-pleated-high-waisted-pants-833901.jpg?v=1729606311",
+    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Ffrench-made-thick-cold-wool-pleated-pants",
+    en: { name: "French-Made Thick Cold Wool Pleated High-Waisted Pants", desc: "Shop on their store." },
+    el: { name: "French-Made Thick Cold Wool Pleated High-Waisted Pants", desc: "Shop on their store." }
+  },
+  {
+    id: "erv-geometric-harmony-linen-shirt",
     brand: "erverte",
     cat: "men",
     type: "shirts",
@@ -10,7 +70,27 @@ const PRODUCTS = [
     el: { name: "Geometric Harmony Linen Shirt", desc: "Shop on their store." }
   },
   {
-    id: "erv-made-in-france-100-linen",
+    id: "erv-linen-shorts",
+    brand: "erverte",
+    cat: "men",
+    type: "tailoring",
+    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/tryon_98418.webp?v=1778575330",
+    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Flinen-shorts",
+    en: { name: "Linen Shorts", desc: "Shop on their store." },
+    el: { name: "Linen Shorts", desc: "Shop on their store." }
+  },
+  {
+    id: "erv-linen-white-pleated-pants",
+    brand: "erverte",
+    cat: "men",
+    type: "tailoring",
+    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/linen-white-pleated-pants-113976.jpg?v=1729606307",
+    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Flinen-white-pleated-pants",
+    en: { name: "Linen White Pleated Pants", desc: "Shop on their store." },
+    el: { name: "Linen White Pleated Pants", desc: "Shop on their store." }
+  },
+  {
+    id: "erv-made-in-france-100-linen-oversized-s",
     brand: "erverte",
     cat: "men",
     type: "shirts",
@@ -20,24 +100,14 @@ const PRODUCTS = [
     el: { name: "Made in France 100% Linen Oversized Shirt", desc: "Shop on their store." }
   },
   {
-    id: "erv-navy-organic-cotton-polo",
+    id: "erv-made-in-france-hoodie-3",
     brand: "erverte",
     cat: "men",
     type: "knit",
-    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/POLO-MARINE_american_shot_52817.webp?v=1765350425",
-    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Fnavy-organic-cotton-polo-made-in-france",
-    en: { name: "Navy Organic Cotton Polo \u2013 Made in France", desc: "Shop on their store." },
-    el: { name: "Navy Organic Cotton Polo \u2013 Made in France", desc: "Shop on their store." }
-  },
-  {
-    id: "erv-white-organic-cotton-pol",
-    brand: "erverte",
-    cat: "men",
-    type: "knit",
-    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/ERM22O002-A11_1_american_shot_52010.webp?v=1765350634",
-    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Fwhite-organic-cotton-polo-made-in-france",
-    en: { name: "White Organic Cotton Polo \u2013 Made in France", desc: "Shop on their store." },
-    el: { name: "White Organic Cotton Polo \u2013 Made in France", desc: "Shop on their store." }
+    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/Sweat-capuche_american_shot_53939.webp?v=1765308917",
+    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Fmade-in-france-hoodie-3",
+    en: { name: "Made in France black hoodie", desc: "Shop on their store." },
+    el: { name: "Made in France black hoodie", desc: "Shop on their store." }
   },
   {
     id: "erv-made-in-france-hoodie-4",
@@ -50,27 +120,27 @@ const PRODUCTS = [
     el: { name: "Made in France grey hoodie", desc: "Shop on their store." }
   },
   {
-    id: "erv-made-in-france-sweatshir",
+    id: "erv-made-in-france-grey-t-shirt",
+    brand: "erverte",
+    cat: "men",
+    type: "shirts",
+    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/T-shirt-gris-chin_american_hand_in_pocket_62387.webp?v=1770206230",
+    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Fmade-in-france-grey-t-shirt",
+    en: { name: "Mottled Grey Cotton T-Shirt \u2013 Made in France", desc: "Shop on their store." },
+    el: { name: "Mottled Grey Cotton T-Shirt \u2013 Made in France", desc: "Shop on their store." }
+  },
+  {
+    id: "erv-sweat-gris-chine",
     brand: "erverte",
     cat: "men",
     type: "knit",
-    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/Sweat-bleu-marine_american_shot_53967_95675c87-0eeb-415a-9bac-860f37bca48f.webp?v=1765311465",
-    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Fmade-in-france-sweatshirt",
-    en: { name: "Navy Organic Cotton Sweatshirt \u2013 Made in France", desc: "Shop on their store." },
-    el: { name: "Navy Organic Cotton Sweatshirt \u2013 Made in France", desc: "Shop on their store." }
+    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/Sweat-gris-100-coton_american_hand_on_hip_62367.webp?v=1770206230",
+    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Fsweat-gris-chine",
+    en: { name: "Mottled Grey Organic Cotton Sweatshirt \u2013 Made in France", desc: "Shop on their store." },
+    el: { name: "Mottled Grey Organic Cotton Sweatshirt \u2013 Made in France", desc: "Shop on their store." }
   },
   {
-    id: "erv-linen-white-pleated-pant",
-    brand: "erverte",
-    cat: "men",
-    type: "tailoring",
-    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/linen-white-pleated-pants-113976.jpg?v=1729606307",
-    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Flinen-white-pleated-pants",
-    en: { name: "Linen White Pleated Pants", desc: "Shop on their store." },
-    el: { name: "Linen White Pleated Pants", desc: "Shop on their store." }
-  },
-  {
-    id: "erv-navy-blue-cap-organic-co",
+    id: "erv-navy-blue-cap-organic-cotton-made-in",
     brand: "erverte",
     cat: "men",
     type: "accessories",
@@ -80,7 +150,217 @@ const PRODUCTS = [
     el: { name: "Navy Blue Cap \u2013 Organic Cotton, Made in France", desc: "Shop on their store." }
   },
   {
-    id: "via-nike-tech-men-s-fleece-w",
+    id: "erv-made-in-france-t-shirt-3",
+    brand: "erverte",
+    cat: "men",
+    type: "shirts",
+    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/T-shirt-bleu-marine_american_arms_behind_62382.webp?v=1774548079",
+    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Fmade-in-france-t-shirt-3",
+    en: { name: "Navy Cotton T-Shirt \u2013 Made in France", desc: "Shop on their store." },
+    el: { name: "Navy Cotton T-Shirt \u2013 Made in France", desc: "Shop on their store." }
+  },
+  {
+    id: "erv-made-in-france-hoodie-2",
+    brand: "erverte",
+    cat: "men",
+    type: "knit",
+    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/Sweat-capuche-fabriqu-en-France_american_hand_in_pocket_62879.webp?v=1770371950",
+    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Fmade-in-france-hoodie-2",
+    en: { name: "Navy Organic Cotton Hoodie \u2013 Made in France", desc: "Shop on their store." },
+    el: { name: "Navy Organic Cotton Hoodie \u2013 Made in France", desc: "Shop on their store." }
+  },
+  {
+    id: "erv-navy-organic-cotton-polo-made-in-fra",
+    brand: "erverte",
+    cat: "men",
+    type: "knit",
+    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/POLO-MARINE_american_shot_52817.webp?v=1765350425",
+    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Fnavy-organic-cotton-polo-made-in-france",
+    en: { name: "Navy Organic Cotton Polo \u2013 Made in France", desc: "Shop on their store." },
+    el: { name: "Navy Organic Cotton Polo \u2013 Made in France", desc: "Shop on their store." }
+  },
+  {
+    id: "erv-made-in-france-sweatshirt",
+    brand: "erverte",
+    cat: "men",
+    type: "knit",
+    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/Sweat-bleu-marine_american_shot_53967_95675c87-0eeb-415a-9bac-860f37bca48f.webp?v=1765311465",
+    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Fmade-in-france-sweatshirt",
+    en: { name: "Navy Organic Cotton Sweatshirt \u2013 Made in France", desc: "Shop on their store." },
+    el: { name: "Navy Organic Cotton Sweatshirt \u2013 Made in France", desc: "Shop on their store." }
+  },
+  {
+    id: "erv-linen-t-shirt",
+    brand: "erverte",
+    cat: "men",
+    type: "shirts",
+    img: "https://cdn.shopify.com/s/files/1/0621/8121/2413/files/linen-t-shirt-635458_american_hand_in_pocket_62940.webp?v=1770371950",
+    url: "https://www.awin1.com/cread.php?awinmid=87255&awinaffid=3068705&ued=https%3A%2F%2Ferverte.com%2Fproducts%2Flinen-t-shirt",
+    en: { name: "Organic French Linen T-Shirt \u2013 Made in France", desc: "Shop on their store." },
+    el: { name: "Organic French Linen T-Shirt \u2013 Made in France", desc: "Shop on their store." }
+  },
+  {
+    id: "via-new-balance-womens-q-speed-fuel-jacq",
+    brand: "viaduct",
+    cat: "women",
+    type: "shirts",
+    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/New_Balance_Women_s_Q_Speed_Fuel_Jacquard_T-Shirt_-_Orange_-_ViaductClothing_-_-_-294737.jpg?v=1717101632",
+    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Fnew-balance-womens-q-speed-fuel-jacquard-t-shirt-orange",
+    en: { name: "New Balance Women's Q Speed Fuel Jacquard T-Shirt - Orange", desc: "Shop on their store." },
+    el: { name: "New Balance Women's Q Speed Fuel Jacquard T-Shirt - Orange", desc: "Shop on their store." }
+  },
+  {
+    id: "via-adidas-originals-adventure-dad-cap-m",
+    brand: "viaduct",
+    cat: "women",
+    type: "accessories",
+    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/adidas_Adventure_Dad_Hat_Beige_IB9491_01_standard_a71c9a90-ed0e-4e2e-81b8-036e6df6faba.jpg?v=1773239600",
+    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Fadidas-originals-adventure-dad-cap-magic-beige-craft-orange",
+    en: { name: "adidas Originals Adventure Dad Cap - Magic Beige / Craft Orange", desc: "Shop on their store." },
+    el: { name: "adidas Originals Adventure Dad Cap - Magic Beige / Craft Orange", desc: "Shop on their store." }
+  },
+  {
+    id: "via-new-balance-athletics-intelligent-ch",
+    brand: "viaduct",
+    cat: "women",
+    type: "knit",
+    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/New_Balance_Athletics_Intelligent_Choice_Crew_-_Saturn_Yellow_-_ViaductClothing_-_-_-293641.jpg?v=1717100245",
+    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Fnew-balance-athletics-intelligent-choice-crew-saturn-yellow",
+    en: { name: "New Balance Athletics Intelligent Choice Crew - Saturn Yellow", desc: "Shop on their store." },
+    el: { name: "New Balance Athletics Intelligent Choice Crew - Saturn Yellow", desc: "Shop on their store." }
+  },
+  {
+    id: "via-new-balance-high-collar-solid-color-",
+    brand: "viaduct",
+    cat: "women",
+    type: "knit",
+    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/New_Balance_High_Collar_Solid_Color_Long_Sleeves_Pullover_Jumper_Sweatshirt_-_Green_-_ViaductClothing_-_-_-294155.jpg?v=1717100914",
+    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Fnew-balance-high-collar-solid-color-long-sleeves-pullover-jumper-sweatshirt-green",
+    en: { name: "New Balance High Collar Solid Color Long Sleeves Pullover Jumper Sweatshirt - Green", desc: "Shop on their store." },
+    el: { name: "New Balance High Collar Solid Color Long Sleeves Pullover Jumper Sweatshirt - Green", desc: "Shop on their store." }
+  },
+  {
+    id: "via-adidas-originals-womens-essentials-o",
+    brand: "viaduct",
+    cat: "women",
+    type: "knit",
+    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/IC4976_F_Model_eCom_1671352230405.jpg?v=1750151628",
+    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Fadidas-originals-womens-essentials-oversized-sweatshirt-blue",
+    en: { name: "adidas Originals Womens Essentials Oversized Sweatshirt - Blue", desc: "Shop on their store." },
+    el: { name: "adidas Originals Womens Essentials Oversized Sweatshirt - Blue", desc: "Shop on their store." }
+  },
+  {
+    id: "via-new-balance-womens-stacked-logo-crop",
+    brand: "viaduct",
+    cat: "women",
+    type: "knit",
+    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/WT03578-BK_1.jpg?v=1744297957",
+    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Fnew-balance-womens-stacked-logo-cropped-hoodie-black",
+    en: { name: "New Balance Womens Stacked Logo Cropped Hoodie - Black", desc: "Shop on their store." },
+    el: { name: "New Balance Womens Stacked Logo Cropped Hoodie - Black", desc: "Shop on their store." }
+  },
+  {
+    id: "via-under-armour-womens-heatgear-mesh-sh",
+    brand: "viaduct",
+    cat: "women",
+    type: "tailoring",
+    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/Under_Armour_Women_s_HeatGear_Mesh_Shorts_-_Black_-_ViaductClothing_-_-_-300799.jpg?v=1717109375",
+    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Funder-armour-womens-heatgear-mesh-shorts-black",
+    en: { name: "Under Armour Women's HeatGear Mesh Shorts - Black", desc: "Shop on their store." },
+    el: { name: "Under Armour Women's HeatGear Mesh Shorts - Black", desc: "Shop on their store." }
+  },
+  {
+    id: "via-reebok-womens-club-c-85-vintage-trai",
+    brand: "viaduct",
+    cat: "women",
+    type: "trainers",
+    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/GX3687_1.jpg?v=1719579247",
+    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Freebok-womens-club-c-85-vintage-trainers-chalk-sky-blue",
+    en: { name: "Reebok Womens Club C 85 Vintage Trainers - Chalk Sky Blue", desc: "Shop on their store." },
+    el: { name: "Reebok Womens Club C 85 Vintage Trainers - Chalk Sky Blue", desc: "Shop on their store." }
+  },
+  {
+    id: "via-new-balance-850-mono-pack-trainers-o",
+    brand: "viaduct",
+    cat: "women",
+    type: "trainers",
+    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/New_Balance_850_Mono_Pack_Trainers_-_Off_White_-_ViaductClothing_-_-_-293291_1.jpg?v=1743158534",
+    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Fnew-balance-850-mono-pack-trainers-off-white",
+    en: { name: "New Balance 850 Mono Pack Trainers - Off White", desc: "Shop on their store." },
+    el: { name: "New Balance 850 Mono Pack Trainers - Off White", desc: "Shop on their store." }
+  },
+  {
+    id: "via-new-balance-womens-ecb-england-repli",
+    brand: "viaduct",
+    cat: "women",
+    type: "knit",
+    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/New_Balance_Women_s_ECB_England_Replica_SS_Polo_Test_-_Angora_-_ViaductClothing_-_-_-294706.jpg?v=1717101603",
+    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Fnew-balance-womens-ecb-england-replica-ss-polo-test-angora",
+    en: { name: "New Balance Women's ECB England Replica SS Polo Test - Angora", desc: "Shop on their store." },
+    el: { name: "New Balance Women's ECB England Replica SS Polo Test - Angora", desc: "Shop on their store." }
+  },
+  {
+    id: "via-under-armour-ua-womens-hovr-phantom-",
+    brand: "viaduct",
+    cat: "women",
+    type: "trainers",
+    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/Under_Armour_UA_Womens_HOVR_Phantom_3_Rflct_Sneakers_-_Ghost_Grey_Versa_Blue_-_ViaductClothing_-_-_-300597_1.jpg?v=1743183571",
+    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Funder-armour-ua-womens-hovr-phantom-3-rflct-sneakers-ghost-grey-versa-blue",
+    en: { name: "Under Armour UA Womens HOVR Phantom 3 Rflct Sneakers - Ghost Grey Versa Blue", desc: "Shop on their store." },
+    el: { name: "Under Armour UA Womens HOVR Phantom 3 Rflct Sneakers - Ghost Grey Versa Blue", desc: "Shop on their store." }
+  },
+  {
+    id: "via-ellesse-womens-tanker-cupsole-shoes-",
+    brand: "viaduct",
+    cat: "women",
+    type: "trainers",
+    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/SGMF0459-BLK_1.jpg?v=1721986645",
+    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Fellesse-womens-tanker-cupsole-shoes-black-pink",
+    en: { name: "Ellesse Womens Tanker Cupsole Shoes - Black Pink", desc: "Shop on their store." },
+    el: { name: "Ellesse Womens Tanker Cupsole Shoes - Black Pink", desc: "Shop on their store." }
+  },
+  {
+    id: "via-new-balance-womens-relentless-5-inch",
+    brand: "viaduct",
+    cat: "women",
+    type: "tailoring",
+    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/WS11196-PGL_4.jpg?v=1728464896",
+    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Fnew-balance-womens-relentless-5-inch-shorts-pink",
+    en: { name: "New Balance Womens Relentless 5-inch Shorts - Pink", desc: "Shop on their store." },
+    el: { name: "New Balance Womens Relentless 5-inch Shorts - Pink", desc: "Shop on their store." }
+  },
+  {
+    id: "via-reebok-classics-unisex-victory-g-gor",
+    brand: "viaduct",
+    cat: "women",
+    type: "trainers",
+    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/Reebok_Classics_Unisex_Victory_G_Gore-tex_Shoes_-_Blue_-_ViaductClothing_-_-_-298178_1.jpg?v=1743185792",
+    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Freebok-classics-unisex-victory-g-gore-tex-shoes-blue",
+    en: { name: "Reebok Classics Unisex Victory G Gore-tex Shoes - Blue", desc: "Shop on their store." },
+    el: { name: "Reebok Classics Unisex Victory G Gore-tex Shoes - Blue", desc: "Shop on their store." }
+  },
+  {
+    id: "via-new-balance-womens-energize-cropped-",
+    brand: "viaduct",
+    cat: "women",
+    type: "knit",
+    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/wt91118gxh_nb_41_i.jpg?v=1744189666",
+    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Fnew-balance-womens-energize-cropped-hoodie-navy",
+    en: { name: "New Balance Womens Energize Cropped Hoodie - Navy", desc: "Shop on their store." },
+    el: { name: "New Balance Womens Energize Cropped Hoodie - Navy", desc: "Shop on their store." }
+  },
+  {
+    id: "via-new-balance-womens-space-dye-capri-t",
+    brand: "viaduct",
+    cat: "women",
+    type: "tailoring",
+    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/wp83882bk_nb_40_i.jpg?v=1728395372",
+    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Fnew-balance-womens-space-dye-capri-tights-black",
+    en: { name: "New Balance Womens Space Dye Capri Tights - Black", desc: "Shop on their store." },
+    el: { name: "New Balance Womens Space Dye Capri Tights - Black", desc: "Shop on their store." }
+  },
+  {
+    id: "via-nike-tech-men-s-fleece-windrunner-fu",
     brand: "viaduct",
     cat: "men",
     type: "knit",
@@ -90,7 +370,7 @@ const PRODUCTS = [
     el: { name: "Nike Tech Men's Fleece Windrunner Full-Zip Jacket - Grey", desc: "Shop on their store." }
   },
   {
-    id: "via-nike-tech-men-s-fleece-w",
+    id: "via-nike-tech-men-s-fleece-windrunner-fu",
     brand: "viaduct",
     cat: "men",
     type: "knit",
@@ -100,44 +380,24 @@ const PRODUCTS = [
     el: { name: "Nike Tech Men's Fleece Windrunner Full-Zip Jacket - White / Blue", desc: "Shop on their store." }
   },
   {
-    id: "via-adidas-originals-superst",
+    id: "via-adidas-originals-adicolor-essentials",
     brand: "viaduct",
     cat: "men",
-    type: "trainers",
-    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/GY3420_SLC_eCom_1659594725131.jpg?v=1788518215",
-    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Fadidas-originals-superstar-shoes-white-gy3420",
-    en: { name: "adidas Originals Superstar Shoes - White", desc: "Shop on their store." },
-    el: { name: "adidas Originals Superstar Shoes - White", desc: "Shop on their store." }
+    type: "knit",
+    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/H34649_5.jpg?v=1788527152",
+    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Fadidas-originals-adicolor-essentials-trefoil-hoodie-white-h34649",
+    en: { name: "adidas Originals Adicolor Essentials Trefoil Hoodie - White", desc: "Shop on their store." },
+    el: { name: "adidas Originals Adicolor Essentials Trefoil Hoodie - White", desc: "Shop on their store." }
   },
   {
-    id: "via-adidas-originals-men-s-r",
+    id: "via-adidas-men-s-essentials-fleece-hoodi",
     brand: "viaduct",
     cat: "men",
-    type: "trainers",
-    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/Rod_Laver_Shoes_White_JI1905_01_standard.jpg?v=1784882995",
-    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Fadidas-originals-men-s-rod-laver-trainers-ftwr-white-ji1905",
-    en: { name: "adidas Originals Rod Laver Trainers - Ftwr White", desc: "Shop on their store." },
-    el: { name: "adidas Originals Rod Laver Trainers - Ftwr White", desc: "Shop on their store." }
-  },
-  {
-    id: "via-adidas-originals-women-s",
-    brand: "viaduct",
-    cat: "women",
-    type: "trainers",
-    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/Court_Tourino_Shoes_White_H02177_01_standard_1.jpg?v=1788522647",
-    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Fadidas-originals-women-s-court-tourino-shoes-white-h02177",
-    en: { name: "adidas Originals Court Tourino Shoes - White", desc: "Shop on their store." },
-    el: { name: "adidas Originals Court Tourino Shoes - White", desc: "Shop on their store." }
-  },
-  {
-    id: "via-adidas-advantage-shoes-w",
-    brand: "viaduct",
-    cat: "women",
-    type: "trainers",
-    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/HR0322_01_standard_1.jpg?v=1788199828",
-    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Fadidas-advantage-shoes-white-hr0322",
-    en: { name: "adidas Women's Advantage Shoes - White / Pink", desc: "Shop on their store." },
-    el: { name: "adidas Women's Advantage Shoes - White / Pink", desc: "Shop on their store." }
+    type: "knit",
+    img: "https://cdn.shopify.com/s/files/1/0300/6631/1261/files/Essentials_Fleece_Hoodie_White_H12211_01_laydown_1.jpg?v=1788522895",
+    url: "https://www.awin1.com/cread.php?awinmid=125096&awinaffid=3068705&ued=https%3A%2F%2Fviaductclothing.co.uk%2Fproducts%2Fadidas-men-s-essentials-fleece-hoodie-white-h12211",
+    en: { name: "adidas Men's Essentials Fleece Hoodie - White", desc: "Shop on their store." },
+    el: { name: "adidas Men's Essentials Fleece Hoodie - White", desc: "Shop on their store." }
   }
 ];
 
