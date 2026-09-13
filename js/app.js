@@ -10,7 +10,7 @@ const I18N = {
     drop: "The first drop", dropSub: "House edit in progress. Sample photography until partner and studio images are cleared.",
     all: "All", shirts: "Shirts", tailoring: "Tailoring", dresses: "Dresses", knit: "Knit",
     houses: "Houses", housesTitle: "About the houses",
-    housesText: "Each line has a reason to sit here. Glamour is the house. Mare and Nisi are edits inside it. Viaduct and Erverte Paris are live partner stores — you buy on their sites.",
+    housesText: "Glamour is the house. Live partner stores: Viaduct Clothing and Erverte Paris — you buy on their sites via Awin.",
     livePartnersTitle: "Live partner houses",
     livePartnersText: "Accepted programmes only. Buy on the brand store.",
     viaductBlurb: "United Kingdom. Trainers and sport.",
@@ -52,7 +52,7 @@ const I18N = {
     drop: "Η πρώτη συλλογή", dropSub: "Δειγματικές εικόνες μέχρι να μπουν οι φωτογραφίες φίρμας.",
     all: "Όλα", shirts: "Πουκάμισα", tailoring: "Ραπτική", dresses: "Φορέματα", knit: "Πλεκτά",
     houses: "Οίκοι", housesTitle: "Σχετικά με τους οίκους",
-    housesText: "Κάθε γραμμή έχει λόγο. Η Glamour είναι ο οίκος. Mare και Nisi είναι επιλογές μέσα του. Viaduct και Erverte Paris είναι live φίρμες — η αγορά στο δικό τους site.",
+    housesText: "Η Glamour είναι ο οίκος. Live φίρμες: Viaduct Clothing και Erverte Paris — αγορά στο δικό τους site μέσω Awin.",
     livePartnersTitle: "Live οίκοι συνεργάτες",
     livePartnersText: "Μόνο αποδεκτά προγράμματα. Η αγορά στο site της φίρμας.",
     viaductBlurb: "Ηνωμένο Βασίλειο. Trainers και sport.",
@@ -84,26 +84,3 @@ const I18N = {
   }
 };
 
-const BRANDS = [
-  {
-    id: "glamour",
-    name: "Glamour",
-    model: "own",
-    en: "The house. Founded in Limassol. Linen, tailoring and silk cut for heat and city nights. We chose this line because it is the reason the site exists — Mediterranean quiet luxury, bilingual, not a generic catalogue.",
-    el: "Ο οίκος. Ιδρύθηκε στη Λεμεσό. Λινό, ραπτική και μετάξι για ζέστη και βράδυ πόλης. Ήσυχη πολυτέλεια, όχι γενικός κατάλογος."
-  },
-  {
-    id: "mare",
-    name: "Mare",
-    model: "line",
-    en: "The menswear cut inside the house. High rise, unstructured jackets, knit that holds heat without weight. Chosen for harbour days and late tables — not costume, not logo sport.",
-    el: "Η ανδρική γραμμή του οίκου. Υψηλό καθιστό, μαλακά σακάκια, πλεκτό χωρίς βάρος. Για μέρα στο λιμάνι και βράδυ τραπέζι — όχι στολή, όχι λόγο."
-  },
-  {
-    id: "nisi",
-    name: "Nisi",
-    model: "line",
-    en: "The womenswear cut inside the house. Bias slips, column dresses, long knit. Chosen for Aegean light and gallery nights — sculpted, not loud.",
-    el: "Η γυναικεία γραμμή του οίκου. Slip, φορέματα στήλη, μακρύ πλεκτό. Για φως Αιγαίου και βράδυ γκαλερί — γλυπτό, όχι φωναχτό."
-  }
-];
