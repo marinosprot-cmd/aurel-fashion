@@ -16,49 +16,59 @@
     <div class="announcement" data-i="ann"></div>
     <div>CY / EU</div>
   </div>
-  <header class="nav">
+  <header class="nav nav-thin">
     <div class="wrap nav-inner">
+      <a class="brand" href="#">GLAMOUR</a>
       <nav class="nav-links">
         <a href="#shop" data-i="shop"></a>
-        <a href="#houses" data-i="houses"></a>
-        <a href="#shops">Shops</a>
-        <a href="#trainers">Viaduct</a>
-        <a href="#erverte">Erverte</a>
-        <a href="#sizes">Sizes</a>
-        <a href="#house" data-i="about"></a>
+        <a href="#houses-stories">Houses</a>
+        <a href="#lookbook" data-i="lookbook"></a>
       </nav>
-      <a class="brand" href="#">GLAMOUR</a>
       <div class="nav-actions">
         <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        <span class="lang-sep">·</span>
         <button class="lang-btn" data-lang="el" onclick="setLang('el')">EL</button>
       </div>
     </div>
   </header>
   <nav class="mobile-nav" aria-label="Mobile">
-    <a href="#houses" data-i="houses"></a>
-    <a href="#shops">Shops</a>
-    <a href="#trainers">Viaduct</a>
-    <a href="#erverte">Erverte</a>
     <a href="#shop" data-i="shop"></a>
+    <a href="#houses-stories">Houses</a>
+    <a href="#lookbook" data-i="lookbook"></a>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" data-lang="el" onclick="setLang('el')">EL</button>
   </nav>
 
   <section class="hero hero-cover" data-slides>
-    <img class="slide on" src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1800&q=80" alt="Glamour 1">
-    <img class="slide" src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1800&q=80" alt="Glamour 2">
-    <img class="slide" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1800&q=80" alt="Glamour 3">
-    <img class="slide" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=1800&q=80" alt="Glamour 4">
-    <img class="slide" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1800&q=80" alt="Glamour 5">
+    <img class="slide on" src="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/tryon_98442.webp?v=1778575390" alt="Erverte Geometric Harmony Linen Shirt">
+    <img class="slide" src="images/lookbook/50560.jpg" alt="NATALLIA CUT · Limassol Marina">
+    <img class="slide" src="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/POLO-MARINE_american_shot_52817.webp?v=1765350425" alt="Erverte Navy Organic Polo">
     <div class="hero-overlay wrap">
       <div class="hero-copy">
         <div class="kicker" data-i="heroKicker"></div>
         <h1 data-i="heroTitle"></h1>
         <p data-i="heroText"></p>
         <div class="hero-actions">
-          <a class="cta" href="#shop" data-i="shopMen" onclick="setFilter('men', document.querySelector('[data-filter=men]'))"></a>
-          <a class="icon-btn" href="#shop" data-i="shopWomen" onclick="setFilter('women', document.querySelector('[data-filter=women]'))"></a>
+          <a class="cta" href="#shop" data-i="shop">Shop</a>
+          <a class="icon-btn" href="#houses-stories">Houses</a>
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="houses-stories" id="houses-stories">
+    <a class="house-tile" href="#erverte">
+      <img src="https://cdn.shopify.com/s/files/1/0621/8121/2413/files/Sweat-capuche_american_hand_in_pocket_62874.webp?v=1770371949" alt="Erverte Paris">
+      <div class="house-tile-copy"><h2>Erverte</h2><p>Made in France · Shop on their store</p></div>
+    </a>
+    <a class="house-tile" href="#trainers">
+      <img src="https://cdn.shopify.com/s/files/1/0300/6631/1261/files/IH4302-063_1_2999184a-47d8-4372-9cd3-01bd9d866e05.jpg?v=1788853256" alt="Viaduct Clothing">
+      <div class="house-tile-copy"><h2>Viaduct</h2><p>Trainers & sport · Shop on their store</p></div>
+    </a>
+    <a class="house-tile" href="#lookbook">
+      <img src="images/lookbook/50559.jpg" alt="Lookbook Natallia">
+      <div class="house-tile-copy"><h2>Lookbook</h2><p>NATALLIA CUT · Limassol</p></div>
+    </a>
   </section>
   <main class="wrap">
     <section class="section" id="houses">
@@ -124,6 +134,9 @@
         </div>
       </div>
       <div class="grid" id="grid"></div>
+      <div class="shop-see-all-wrap">
+        <button type="button" class="cta shop-see-all" id="shop-see-all" onclick="toggleShopSeeAll()">See all</button>
+      </div>
     </section>
     <section class="section" id="lookbook">
       <div class="lookbook-wrap">
