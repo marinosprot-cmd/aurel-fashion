@@ -420,6 +420,8 @@ const BRANDS = [
 
 let lang = localStorage.getItem("glamour-lang") || "en";
 let filter = "all";
+let shopSeeAll = false;
+const SHOP_PREVIEW = 8;
 let cart = [];
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -453,16 +455,28 @@ function renderBrands() {
 function renderProducts() {
   const root = $("#grid");
   if (!root) return;
-  const list = PRODUCTS.filter(
+  const filtered = PRODUCTS.filter(
     (p) => filter === "all" || p.cat === filter || p.type === filter || p.brand === filter
   );
+  const list = shopSeeAll ? filtered : filtered.slice(0, SHOP_PREVIEW);
   root.innerHTML = list
     .map((p) => {
       const b = brandOf(p);
       return `<a class="card shop-card" rel="sponsored noopener" target="_blank" href="${p.url}"><div class="card-img"><span class="badge">${b.name}</span><img src="${p.img}" alt="${p[lang].name}" loading="lazy"></div><div class="card-body"><h3>${p[lang].name}</h3><div class="meta"><strong>Shop on their store</strong></div></div></a>`;
     })
     .join("");
+  const btn = document.getElementById("shop-see-all");
+  if (btn) {
+    const more = filtered.length > SHOP_PREVIEW;
+    btn.style.display = more ? "" : "none";
+    btn.textContent = shopSeeAll ? (lang === "el" ? "Λιγότερα" : "Show less") : (lang === "el" ? "Δες όλα" : "See all");
+  }
 }
+function toggleShopSeeAll() {
+  shopSeeAll = !shopSeeAll;
+  renderProducts();
+}
+window.toggleShopSeeAll = toggleShopSeeAll;
 function openProduct(id) {
   const p = PRODUCTS.find((x) => x.id === id);
   if (p?.url) window.open(p.url, "_blank", "noopener");
@@ -476,6 +490,7 @@ function updateCount(){ const c=$("#count"); if(c) c.textContent=0; }
 function setLang(next){ lang=next; localStorage.setItem("glamour-lang", lang); applyLang(); }
 function setFilter(next, el){
   filter=next;
+  shopSeeAll=false;
   $$(".chip").forEach((c)=>c.classList.remove("active"));
   if(el) el.classList.add("active");
   renderProducts();
