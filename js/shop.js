@@ -1,5 +1,85 @@
 const PRODUCTS = [
   {
+    id: "tal-evening-dress-sommerhit2",
+    brand: "talbot",
+    cat: "women",
+    type: "tailoring",
+    img: "https://assets.talbotrunhof.com/media/c1/50/63/1769516293/Sommerhit2-OL1000-02-QO15-840-263a-1.jpg?ts=1769516293",
+    url: "https://www.awin1.com/cread.php?awinmid=120902&awinaffid=3068705&ued=https%3A%2F%2Fwww.talbotrunhof.com%2Fen%2Fclothing%2Fevening-dress-sommerhit2%2Fsommerhit2-qo15-840-34%2F",
+    en: { name: "Evening Dress Sommerhit2", desc: "Shop on their store." },
+    el: { name: "Evening Dress Sommerhit2", desc: "Shop on their store." }
+  },
+  {
+    id: "tal-evening-dress-solite1",
+    brand: "talbot",
+    cat: "women",
+    type: "tailoring",
+    img: "https://assets.talbotrunhof.com/media/b5/c2/c9/1769516292/Solite1-OL1034-01-1200-840-263a-1.jpg?ts=1769516292",
+    url: "https://www.awin1.com/cread.php?awinmid=120902&awinaffid=3068705&ued=https%3A%2F%2Fwww.talbotrunhof.com%2Fen%2Fclothing%2Fevening-dress-solite1%2Fsolite1-1200-840-42%2F",
+    en: { name: "Evening Dress Solite1", desc: "Shop on their store." },
+    el: { name: "Evening Dress Solite1", desc: "Shop on their store." }
+  },
+  {
+    id: "tal-cocktail-dress-kortney1",
+    brand: "talbot",
+    cat: "women",
+    type: "tailoring",
+    img: "https://assets.talbotrunhof.com/media/78/bd/d9/1769516131/Kortney1-OS0152-01-1200-840-263a-1.jpg?ts=1769516131",
+    url: "https://www.awin1.com/cread.php?awinmid=120902&awinaffid=3068705&ued=https%3A%2F%2Fwww.talbotrunhof.com%2Fen%2Fclothing%2Fcocktail-dress-kortney1%2Fkortney1-1200-840-34m%2F",
+    en: { name: "Cocktail Dress Kortney1", desc: "Shop on their store." },
+    el: { name: "Cocktail Dress Kortney1", desc: "Shop on their store." }
+  },
+  {
+    id: "tal-evening-dress-socialclub6",
+    brand: "talbot",
+    cat: "women",
+    type: "tailoring",
+    img: "https://assets.talbotrunhof.com/media/f8/f0/11/1770375326/Socialclub6-OL1033-06-ND42-999-263a-1.jpg?ts=1770375326",
+    url: "https://www.awin1.com/cread.php?awinmid=120902&awinaffid=3068705&ued=https%3A%2F%2Fwww.talbotrunhof.com%2Fen%2Fclothing%2Fevening-dress-socialclub6%2Fsocialclub6-nd42-999-36%2F",
+    en: { name: "Evening Dress Socialclub6", desc: "Shop on their store." },
+    el: { name: "Evening Dress Socialclub6", desc: "Shop on their store." }
+  },
+  {
+    id: "tal-midi-dress-postit3",
+    brand: "talbot",
+    cat: "women",
+    type: "tailoring",
+    img: "https://assets.talbotrunhof.com/media/84/2b/a4/1769516247/Postit3-OM0879-03-RF15-870-263a-1.jpg?ts=1769516247",
+    url: "https://www.awin1.com/cread.php?awinmid=120902&awinaffid=3068705&ued=https%3A%2F%2Fwww.talbotrunhof.com%2Fen%2Fclothing%2Fmidi-dress-postit3%2Fpostit3-rf15-870-34%2F",
+    en: { name: "Midi Dress Postit3", desc: "Shop on their store." },
+    el: { name: "Midi Dress Postit3", desc: "Shop on their store." }
+  },
+  {
+    id: "tal-midi-dress-rotterdam11",
+    brand: "talbot",
+    cat: "women",
+    type: "tailoring",
+    img: "https://assets.talbotrunhof.com/media/0b/48/58/1769516260/Rotterdam11-OM0448-11-RL25-38-263a-1.jpg?ts=1769516260",
+    url: "https://www.awin1.com/cread.php?awinmid=120902&awinaffid=3068705&ued=https%3A%2F%2Fwww.talbotrunhof.com%2Fen%2Fclothing%2Fmidi-dress-rotterdam11%2Frotterdam11-rl25-038-34%2F",
+    en: { name: "Midi Dress Rotterdam11", desc: "Shop on their store." },
+    el: { name: "Midi Dress Rotterdam11", desc: "Shop on their store." }
+  },
+  {
+    id: "tal-evening-dress-pollent1",
+    brand: "talbot",
+    cat: "women",
+    type: "tailoring",
+    img: "https://assets.talbotrunhof.com/media/88/52/bc/1769516230/Pollent1-OL0832-01-ND43-870-263a-1.jpg?ts=1769516230",
+    url: "https://www.awin1.com/cread.php?awinmid=120902&awinaffid=3068705&ued=https%3A%2F%2Fwww.talbotrunhof.com%2Fen%2Fclothing%2Fevening-dress-pollent1%2Fpollent1-nd43-870-36%2F",
+    en: { name: "Evening Dress Pollent1", desc: "Shop on their store." },
+    el: { name: "Evening Dress Pollent1", desc: "Shop on their store." }
+  },
+  {
+    id: "tal-midi-dress-sososo2",
+    brand: "talbot",
+    cat: "women",
+    type: "tailoring",
+    img: "https://assets.talbotrunhof.com/media/05/55/30/1769516298/Sososo2-OM1022-02-RB45-900-263a-1.jpg?ts=1769516298",
+    url: "https://www.awin1.com/cread.php?awinmid=120902&awinaffid=3068705&ued=https%3A%2F%2Fwww.talbotrunhof.com%2Fen%2Fclothing%2Fmidi-dress-sososo2%2Fsososo2-rb45-900-34%2F",
+    en: { name: "Midi Dress Sososo2", desc: "Shop on their store." },
+    el: { name: "Midi Dress Sososo2", desc: "Shop on their store." }
+  },
+  {
     id: "erv-made-in-france-t-shirt-1",
     brand: "erverte",
     cat: "men",
@@ -415,6 +495,13 @@ const BRANDS = [
     model: "affiliate",
     en: "Partner house. Men, women, trainers. You buy on their store.",
     el: "Φίρμα-συνεργάτης. Άνδρες, γυναίκες, trainers. Αγορά στο δικό τους store."
+  },
+  {
+    id: "talbot",
+    name: "TALBOT RUNHOF",
+    model: "affiliate",
+    en: "Partner house. Evening and occasion womenswear, Munich. You buy on their store.",
+    el: "Φίρμα-συνεργάτης. Evening / occasion γυναικεία, Μόναχο. Αγορά στο δικό τους store."
   }
 ];
 
