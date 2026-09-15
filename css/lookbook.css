@@ -64,3 +64,5 @@
   font-size: 15px;
   line-height: 1.45;
 }
+
+.lookbook-wrap + .lookbook-wrap { margin-top: 72px; }
