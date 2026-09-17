@@ -231,3 +231,36 @@ footer { padding: 56px 0 32px; border-top: 1px solid var(--line); color: var(--m
     object-position: center 22%;
   }
 }
+
+/* HOUSE TILES FACES 2026-09-17 — portrait tiles, faces visible */
+.house-tile {
+  min-height: 56vh;
+}
+.house-tile img,
+.house-tile--face img {
+  object-fit: cover;
+  object-position: center top;
+}
+@media (min-width: 840px) {
+  .houses-stories {
+    align-items: stretch;
+  }
+  .house-tile {
+    min-height: 0;
+    aspect-ratio: 3 / 4;
+    height: auto;
+  }
+  .house-tile img,
+  .house-tile--face img {
+    object-position: center 8%;
+  }
+}
+@media (max-width: 839px) {
+  .house-tile {
+    min-height: 70vh;
+  }
+  .house-tile img,
+  .house-tile--face img {
+    object-position: center top;
+  }
+}
