@@ -29,7 +29,7 @@ a { color: inherit; text-decoration: none; }
 .cta { background: var(--ink); color: var(--white); border-color: var(--ink); }
 .lang-btn.active { background: var(--ink); color: var(--white); }
 .hero-cover { position: relative; min-height: 88vh; height: 88vh; display: block; padding: 0; overflow: hidden; background: #1a1613; }
-.hero-cover > img.slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 18%; opacity: 0; transition: opacity 1.2s ease; }
+.hero-cover > img.slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 22%; opacity: 0; transition: opacity 1.2s ease; }
 .hero-cover > img.slide.on { opacity: 1; }
 .hero-overlay { position: absolute; inset: 0; display: flex; align-items: flex-end; padding-bottom: 80px; background: linear-gradient(90deg, rgba(10,8,7,.82) 0%, rgba(10,8,7,.5) 38%, rgba(10,8,7,.15) 68%); z-index: 2; }
 .hero-cover .hero-copy { padding: 0 0 8px; max-width: 640px; }
@@ -213,5 +213,21 @@ footer { padding: 56px 0 32px; border-top: 1px solid var(--line); color: var(--m
 .house-tile-copy p { margin: 0; font-size: 14px; opacity: .92; }
 .shop-see-all-wrap { display: flex; justify-content: center; margin-top: 28px; }
 .shop-see-all { min-width: 160px; }
-.hero-cover > img.slide { object-position: center center; }
 
+
+/* HERO DESKTOP 2026-09-17 — desktop only; mobile untouched */
+@media (min-width: 981px) {
+  .hero-cover {
+    height: min(94vh, 980px);
+    min-height: 720px;
+  }
+  .hero-cover > img.slide {
+    object-fit: cover;
+    object-position: center 12%;
+  }
+}
+@media (max-width: 980px) {
+  .hero-cover > img.slide {
+    object-position: center 22%;
+  }
+}
