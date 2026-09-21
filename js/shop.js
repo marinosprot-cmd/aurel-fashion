@@ -1,3 +1,4 @@
+/* DRAFT 2026-09-21: affiliate-only — no Glamour own SKUs / Unsplash in PRODUCTS (verified). No catalogue changes. */
 const PRODUCTS = [
   {
     id: "tal-evening-dress-sommerhit2",
