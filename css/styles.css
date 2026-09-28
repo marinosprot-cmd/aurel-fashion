@@ -100,6 +100,11 @@ footer { padding: 56px 0 32px; border-top: 1px solid var(--line); color: var(--m
   .newsletter, .foot, .quiz-options, .model, .brand-grid { grid-template-columns: 1fr; }
   .wrap { width: min(1320px, calc(100% - 32px)); }
   .hero-cover h1 { font-size: 40px; }
+  /* Newsletter: keep email + Join inside the section on small screens */
+  .newsletter > * { min-width: 0; }
+  .newsletter form { width: 100%; min-width: 0; }
+  .newsletter input { flex: 1 1 auto; width: auto; min-width: 0; }
+  .newsletter form .cta { flex: none; white-space: nowrap; }
 }
 
 
