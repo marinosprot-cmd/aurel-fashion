@@ -14,3 +14,14 @@
   .store-card { padding: 44px 24px; }
   .store-card h3 { font-size: 28px; }
 }
+
+/* Anchor target for nav/inline links; offset for sticky header / mobile nav */
+#shop-their-store { scroll-margin-top: 88px; }
+
+/* "Also · Shop their store" line under Houses */
+.houses-also { margin: -48px 0 48px; text-align: center; font-size: 14px; letter-spacing: .04em; color: var(--muted); }
+.houses-also a { color: var(--muted); text-decoration: underline; text-decoration-color: rgba(109, 101, 92, .45); text-decoration-thickness: 1px; text-underline-offset: 4px; transition: color .3s ease, text-decoration-color .3s ease; }
+.houses-also a:hover, .houses-also a:focus-visible { color: var(--ink); text-decoration-color: currentColor; }
+@media (max-width: 980px) {
+  .houses-also { margin: -24px 0 32px; }
+}
