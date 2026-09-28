@@ -1,0 +1,16 @@
+/* Shop their store — draft section (#stores) */
+#stores { padding: 96px 0 112px; border-top: 1px solid var(--line); }
+#stores .stores-head { text-align: center; margin-bottom: 48px; }
+#stores .stores-head h2 { font-family: "Cormorant Garamond", serif; font-size: 44px; font-weight: 500; line-height: 1.1; }
+.store-card { max-width: 440px; margin: 0 auto; padding: 56px 40px; background: var(--card); border: 1px solid var(--line); text-align: center; }
+.store-card h3 { font-family: "Cormorant Garamond", serif; font-size: 32px; font-weight: 500; letter-spacing: .24em; margin-bottom: 10px; }
+.store-card p { color: var(--muted); font-size: 14px; letter-spacing: .04em; margin-bottom: 32px; }
+.store-card .store-btn { display: inline-block; border: 1px solid var(--ink); background: transparent; color: var(--ink); padding: 12px 28px; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; transition: background .3s ease, color .3s ease; }
+.store-card .store-btn:hover, .store-card .store-btn:focus-visible { background: var(--ink); color: var(--white); }
+@media (max-width: 640px) {
+  #stores { padding: 72px 0 88px; }
+  #stores .stores-head { margin-bottom: 32px; }
+  #stores .stores-head h2 { font-size: 34px; }
+  .store-card { padding: 44px 24px; }
+  .store-card h3 { font-size: 28px; }
+}
