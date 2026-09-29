@@ -81,6 +81,46 @@ const PRODUCTS = [
     el: { name: "Μίντι φόρεμα Sososo2", desc: "Αγορά στο κατάστημά τους." }
   },
   {
+    id: "mis-draped-beige-crepe-dress-with-contrastin",
+    brand: "misciano",
+    cat: "women",
+    type: "dresses",
+    img: "https://media.misciano.com/robe-drapee-en-crepe-beige-a-encolure-contrastee-3429607.jpg",
+    url: "https://www.awin1.com/cread.php?awinmid=117185&awinaffid=3068705&ued=https%3A%2F%2Fmisciano.com%2Fen%2Fproducts%2Fdraped-beige-crepe-dress-with-contrasting-neckline",
+    en: { name: "Draped beige crepe dress with contrasting neckline", desc: "Shop on their store." },
+    el: { name: "Ντραπέ φόρεμα από μπεζ κρεπ με λαιμόκοψη σε αντίθεση", desc: "Αγορά στο κατάστημά τους." }
+  },
+  {
+    id: "mis-long-black-dress-with-plunging-cowl-neck",
+    brand: "misciano",
+    cat: "women",
+    type: "dresses",
+    img: "https://media.misciano.com/robe-longue-noire-col-benitier-plongeant-et-cordons-6855089.jpg",
+    url: "https://www.awin1.com/cread.php?awinmid=117185&awinaffid=3068705&ued=https%3A%2F%2Fmisciano.com%2Fen%2Fproducts%2Flong-black-dress-with-plunging-cowl-neck",
+    en: { name: "Long black dress with a plunging cowl neck and ties", desc: "Shop on their store." },
+    el: { name: "Μακρύ μαύρο φόρεμα με βαθύ ντραπέ λαιμό και κορδόνια", desc: "Αγορά στο κατάστημά τους." }
+  },
+  {
+    id: "mis-sage-green-satin-midi-dress-with-draped-",
+    brand: "misciano",
+    cat: "women",
+    type: "dresses",
+    img: "https://media.misciano.com/products/robe-midi-satinee-vert-sauge-a-col-drape-principale-v1789115091074.webp",
+    url: "https://www.awin1.com/cread.php?awinmid=117185&awinaffid=3068705&ued=https%3A%2F%2Fmisciano.com%2Fen%2Fproducts%2Fsage-green-satin-midi-dress-with-draped-collar",
+    en: { name: "Sage green satin midi dress with cowl neckline", desc: "Shop on their store." },
+    el: { name: "Σατέν μίντι φόρεμα σε πράσινο φασκόμηλο με ντραπέ λαιμό", desc: "Αγορά στο κατάστημά τους." }
+  },
+  {
+    id: "mis-black-ribbed-knit-midi-dress",
+    brand: "misciano",
+    cat: "women",
+    type: "knit",
+    img: "https://media.misciano.com/Robe-midi-noire-en-maille-Misciano-vu-de-face.jpg",
+    url: "https://www.awin1.com/cread.php?awinmid=117185&awinaffid=3068705&ued=https%3A%2F%2Fmisciano.com%2Fen%2Fproducts%2Fblack-ribbed-knit-midi-dress",
+    en: { name: "Black ribbed knit midi dress", desc: "Shop on their store." },
+    el: { name: "Μαύρο μίντι φόρεμα από ριπ πλέξη", desc: "Αγορά στο κατάστημά τους." }
+  },
+  {
     id: "erv-made-in-france-t-shirt-1",
     brand: "erverte",
     cat: "men",
@@ -503,6 +543,13 @@ const BRANDS = [
     model: "affiliate",
     en: "Partner house. Evening and occasion womenswear, Munich. You buy on their store.",
     el: "Φίρμα-συνεργάτης. Βραδινά και επίσημα γυναικεία, Μόναχο. Αγορά στο δικό τους κατάστημα."
+  },
+  {
+    id: "misciano",
+    name: "MISCIANO",
+    model: "affiliate",
+    en: "Partner house. Womenswear designed in Paris, made in Tuscany. You buy on their store.",
+    el: "Φίρμα-συνεργάτης. Γυναικεία ένδυση σχεδιασμένη στο Παρίσι, φτιαγμένη στην Τοσκάνη. Αγορά στο δικό τους κατάστημα."
   }
 ];
 

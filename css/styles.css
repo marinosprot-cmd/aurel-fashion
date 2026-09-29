@@ -302,3 +302,8 @@ footer { padding: 56px 0 32px; border-top: 1px solid var(--line); color: var(--m
   #misciano .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
 }
 #misciano .cta { display: inline-block; line-height: 1.6; text-align: center; }
+/* 4 HOUSES 2026-09-29 — brand cards + Partner shops 4-up on desktop */
+@media (min-width: 981px) {
+  .brand-grid { grid-template-columns: repeat(4, 1fr); }
+  #shops .model { grid-template-columns: repeat(4, 1fr); }
+}
