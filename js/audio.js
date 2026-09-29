@@ -14,6 +14,12 @@
     }
   ];
   var idx = 0;
+  var FALLBACK = { audioPlay: "Play", audioMute: "Mute", audioHint: "click play/pause · double-click next" };
+  function tr(k) { return typeof t === "function" ? t(k) : FALLBACK[k]; }
+  window.audioLabels = function () {
+    var b = document.getElementById("audio-toggle");
+    applyLabels(!!(b && b.classList.contains("is-on")));
+  };
   if (document.getElementById("audio-toggle")) return init();
   var link = document.createElement("link");
   link.rel = "stylesheet";
@@ -24,8 +30,8 @@
   btn.id = "audio-toggle";
   btn.className = "audio-toggle";
   btn.setAttribute("aria-pressed", "false");
-  btn.setAttribute("aria-label", "Play · " + TRACKS[0].title);
-  btn.title = TRACKS[0].title + " — click play/pause · double-click next";
+  btn.setAttribute("aria-label", tr("audioPlay") + " · " + TRACKS[0].title);
+  btn.title = TRACKS[0].title + " — " + tr("audioHint");
   btn.innerHTML = "<span aria-hidden=\"true\">\u266a</span>";
   var audio = document.createElement("audio");
   audio.id = "house-audio";
@@ -43,8 +49,8 @@
     var b = document.getElementById("audio-toggle");
     if (!b) return;
     var t = TRACKS[idx].title;
-    b.title = t + " — click play/pause · double-click next";
-    b.setAttribute("aria-label", (playing ? "Mute · " : "Play · ") + t);
+    b.title = t + " — " + tr("audioHint");
+    b.setAttribute("aria-label", tr(playing ? "audioMute" : "audioPlay") + " · " + t);
   }
 
   function setTrack(i, keepPlaying) {

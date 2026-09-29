@@ -35,7 +35,9 @@
       slides.forEach((_, idx) => {
         const b = document.createElement("button");
         b.type = "button";
-        b.setAttribute("aria-label", "Slide " + (idx + 1));
+        b.dataset.iAria = "slide";
+        b.dataset.iN = String(idx + 1);
+        b.setAttribute("aria-label", (typeof t === "function" ? t("slide") : "Slide") + " " + (idx + 1));
         b.addEventListener("click", () => { show(idx); arm(); });
         dotsRoot.appendChild(b);
       });
