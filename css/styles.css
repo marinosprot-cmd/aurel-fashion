@@ -289,3 +289,16 @@ footer { padding: 56px 0 32px; border-top: 1px solid var(--line); color: var(--m
     object-position: center top;
   }
 }
+
+/* MISCIANO DRAFT 2026-09-29 — 4 house tiles; Misciano grid 4-up on desktop */
+@media (min-width: 840px) {
+  .houses-stories { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1180px) {
+  .houses-stories { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+.house-tile-copy p.house-tile-desc { margin: 0 0 4px; }
+@media (min-width: 981px) {
+  #misciano .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+}
+#misciano .cta { display: inline-block; line-height: 1.6; text-align: center; }
