@@ -25,3 +25,12 @@
 @media (max-width: 980px) {
   .houses-also { margin: -24px 0 32px; }
 }
+
+/* Pitod (Awin 29337) next to T.LUXY — draft */
+.store-grid { display: grid; grid-template-columns: 1fr; gap: 24px; justify-items: center; }
+.store-grid .store-card { width: 100%; }
+.store-card-img { display: block; width: 100%; height: 200px; object-fit: cover; object-position: center 30%; margin: 0 0 28px; }
+@media (min-width: 900px) {
+  .store-grid { grid-template-columns: repeat(2, minmax(0, 440px)); justify-content: center; align-items: stretch; }
+  .store-grid .store-card { margin: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+}
