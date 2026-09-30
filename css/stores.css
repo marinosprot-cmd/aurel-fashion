@@ -34,3 +34,11 @@
   .store-grid { grid-template-columns: repeat(2, minmax(0, 440px)); justify-content: center; align-items: stretch; }
   .store-grid .store-card { margin: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 }
+
+/* Alviero Martini (Awin 20346) after Pitod — draft */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .store-grid .store-card--alviero { grid-column: 1 / -1; justify-self: center; max-width: 440px; }
+}
+@media (min-width: 1200px) {
+  .store-grid { grid-template-columns: repeat(3, minmax(0, 420px)); }
+}
