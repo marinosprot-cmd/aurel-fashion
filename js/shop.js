@@ -567,6 +567,7 @@ function t(key) {
   for (const p of key.split(".")) v = v?.[p];
   return v ?? key;
 }
+const BRAND_CTA = { erverte: "ctaErverte", viaduct: "ctaViaduct", talbot: "ctaTalbot", misciano: "ctaMisciano" };
 function brandOf(p) {
   return BRANDS.find((b) => b.id === p.brand) || BRANDS[0];
 }
@@ -602,7 +603,7 @@ function renderProducts() {
   root.innerHTML = list
     .map((p) => {
       const b = brandOf(p);
-      return `<a class="card shop-card" rel="sponsored noopener" target="_blank" href="${p.url}"><div class="card-img"><span class="badge">${b.name}</span><img src="${p.img}" alt="${p[lang].name}" loading="lazy"></div><div class="card-body"><h3>${p[lang].name}</h3><div class="meta"><strong>${t("onStore")}</strong></div></div></a>`;
+      return `<a class="card shop-card" rel="sponsored noopener" target="_blank" href="${p.url}"><div class="card-img"><span class="badge">${b.name}</span><img src="${p.img}" alt="${p[lang].name}" loading="lazy"></div><div class="card-body"><h3>${p[lang].name}</h3><div class="meta"><strong>${t(BRAND_CTA[p.brand] || "onStore")}</strong></div></div></a>`;
     })
     .join("");
   const btn = document.getElementById("shop-see-all");
