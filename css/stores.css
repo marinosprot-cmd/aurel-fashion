@@ -53,3 +53,6 @@
 .store-card-img-link { display: block; width: 100%; margin: 0 0 28px; }
 .store-card-img-link .store-card-img { margin: 0; }
 .store-card-img--banner { object-fit: contain; object-position: center; background: var(--bg-2); }
+
+/* T.LUXY Awin creative 3637513 (168×168) — hotlinked, unaltered; same 200px slot, but padded so it renders at native 168px (no upscaling) — draft */
+.store-card-img--small { box-sizing: border-box; padding: 16px; }
