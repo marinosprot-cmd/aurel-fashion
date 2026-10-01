@@ -48,3 +48,8 @@
   .store-grid { grid-template-columns: repeat(2, minmax(0, 440px)); }
   .store-grid .store-card--alviero { grid-column: auto; }
 }
+
+/* Coes Awin creative 4672942 (1230×600) — hotlinked from Awin, shown whole & unaltered (no crop/overlay) — draft */
+.store-card-img-link { display: block; width: 100%; margin: 0 0 28px; }
+.store-card-img-link .store-card-img { margin: 0; }
+.store-card-img--banner { object-fit: contain; object-position: center; background: var(--bg-2); }
