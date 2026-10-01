@@ -42,3 +42,9 @@
 @media (min-width: 1200px) {
   .store-grid { grid-template-columns: repeat(3, minmax(0, 420px)); }
 }
+
+/* Coes (Awin 30645) — 4th card: 2×2 grid on desktop, 1 column on mobile */
+@media (min-width: 900px) {
+  .store-grid { grid-template-columns: repeat(2, minmax(0, 440px)); }
+  .store-grid .store-card--alviero { grid-column: auto; }
+}
