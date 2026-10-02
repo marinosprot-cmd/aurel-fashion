@@ -307,3 +307,14 @@ footer { padding: 56px 0 32px; border-top: 1px solid var(--line); color: var(--m
   .brand-grid { grid-template-columns: repeat(4, 1fr); }
   #shops .model { grid-template-columns: repeat(4, 1fr); }
 }
+
+/* SITE AUDIT 2026-10-02 — House section CTAs: same treatment as #misciano .cta so the long
+   "Affiliate partner · Shop directly with …" label wraps as one box on mobile (was a broken inline box) */
+#talbot .partners-box > .cta, #trainers .partners-box > .cta, #erverte .partners-box > .cta { display: inline-block; line-height: 1.6; text-align: center; }
+#trainers .partners-box > .cta, #erverte .partners-box > .cta { margin-top: 28px; }
+/* 4 House photos per section: 4-up on desktop like #misciano (no orphan 4th card) */
+@media (min-width: 981px) {
+  #talbot .grid, #trainers .grid, #erverte .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+}
+/* Anchor targets whose first element is an image: keep it clear of the sticky bar */
+#houses-stories, #lookbook { scroll-margin-top: 60px; }
