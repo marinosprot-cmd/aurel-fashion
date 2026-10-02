@@ -44,39 +44,39 @@
   function build() {
     if (root) return;
     root = document.createElement("div");
-    root.id = "cookie-banner";
-    root.className = "ck";
+    root.id = "gl-prefs-panel";
+    root.className = "glp";
     root.setAttribute("role", "region");
     root.setAttribute("data-i-aria", "ckLabel");
     root.hidden = true;
     root.innerHTML =
-      '<div class="ck-inner">' +
-        '<p class="ck-text" id="ck-text" data-i="ckText"></p>' +
-        '<p class="ck-links"><a href="/privacy" data-i="lgPrivacy"></a><span aria-hidden="true"> · </span><a href="/cookies" data-i="lgCookies"></a></p>' +
-        '<div class="ck-panel" id="ck-panel" hidden>' +
-          '<h2 class="ck-title" data-i="lgCookieSettings"></h2>' +
-          '<div class="ck-row"><label for="ck-essential"><strong data-i="ckEssential"></strong><small data-i="ckEssentialD"></small></label>' +
-            '<input type="checkbox" role="switch" id="ck-essential" checked disabled></div>' +
-          '<div class="ck-row"><label for="ck-analytics"><strong data-i="ckAnalytics"></strong><small data-i="ckAnalyticsD"></small></label>' +
-            '<input type="checkbox" role="switch" id="ck-analytics"></div>' +
-          '<div class="ck-row"><label for="ck-affiliate"><strong data-i="ckAffiliate"></strong><small data-i="ckAffiliateD"></small></label>' +
-            '<input type="checkbox" role="switch" id="ck-affiliate"></div>' +
-          '<button type="button" class="cta ck-save" id="ck-save" data-i="ckSave"></button>' +
+      '<div class="glp-inner">' +
+        '<p class="glp-text" id="glp-text" data-i="ckText"></p>' +
+        '<p class="glp-links"><a href="/privacy" data-i="lgPrivacy"></a><span aria-hidden="true"> · </span><a href="/cookies" data-i="lgCookies"></a></p>' +
+        '<div class="glp-panel" id="glp-panel" hidden>' +
+          '<h2 class="glp-title" data-i="lgCookieSettings"></h2>' +
+          '<div class="glp-row"><label for="glp-essential"><strong data-i="ckEssential"></strong><small data-i="ckEssentialD"></small></label>' +
+            '<input type="checkbox" role="switch" id="glp-essential" checked disabled></div>' +
+          '<div class="glp-row"><label for="glp-analytics"><strong data-i="ckAnalytics"></strong><small data-i="ckAnalyticsD"></small></label>' +
+            '<input type="checkbox" role="switch" id="glp-analytics"></div>' +
+          '<div class="glp-row"><label for="glp-affiliate"><strong data-i="ckAffiliate"></strong><small data-i="ckAffiliateD"></small></label>' +
+            '<input type="checkbox" role="switch" id="glp-affiliate"></div>' +
+          '<button type="button" class="cta glp-save" id="glp-save" data-i="ckSave"></button>' +
         '</div>' +
-        '<div class="ck-actions">' +
-          '<button type="button" class="cta" id="ck-accept" data-i="ckAccept"></button>' +
-          '<button type="button" class="icon-btn" id="ck-reject" data-i="ckReject"></button>' +
-          '<button type="button" class="icon-btn" id="ck-settings" aria-expanded="false" aria-controls="ck-panel" data-i="ckSettings"></button>' +
+        '<div class="glp-actions">' +
+          '<button type="button" class="cta" id="glp-accept" data-i="ckAccept"></button>' +
+          '<button type="button" class="icon-btn" id="glp-reject" data-i="ckReject"></button>' +
+          '<button type="button" class="icon-btn" id="glp-settings" aria-expanded="false" aria-controls="glp-panel" data-i="ckSettings"></button>' +
         '</div>' +
       '</div>';
     document.body.appendChild(root);
-    panel = root.querySelector("#ck-panel");
-    settingsBtn = root.querySelector("#ck-settings");
-    analyticsBox = root.querySelector("#ck-analytics");
-    affiliateBox = root.querySelector("#ck-affiliate");
-    root.querySelector("#ck-accept").addEventListener("click", function () { save(true, true); });
-    root.querySelector("#ck-reject").addEventListener("click", function () { save(false, false); });
-    root.querySelector("#ck-save").addEventListener("click", function () { save(analyticsBox.checked, affiliateBox.checked); });
+    panel = root.querySelector("#glp-panel");
+    settingsBtn = root.querySelector("#glp-settings");
+    analyticsBox = root.querySelector("#glp-analytics");
+    affiliateBox = root.querySelector("#glp-affiliate");
+    root.querySelector("#glp-accept").addEventListener("click", function () { save(true, true); });
+    root.querySelector("#glp-reject").addEventListener("click", function () { save(false, false); });
+    root.querySelector("#glp-save").addEventListener("click", function () { save(analyticsBox.checked, affiliateBox.checked); });
     settingsBtn.addEventListener("click", function () { togglePanel(panel.hidden); });
     translate(root);
   }
