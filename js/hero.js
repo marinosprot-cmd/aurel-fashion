@@ -26,6 +26,16 @@ function initSlides() {
 window.initSlides = initSlides;
 initSlides();
 
+// Hero video: poster only under prefers-reduced-motion
+(function () {
+  var v = document.querySelector(".hero-cover > .hero-video");
+  if (!v || !window.matchMedia) return;
+  var mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+  function apply() { if (mq.matches) { v.removeAttribute("autoplay"); v.pause(); } else if (v.paused) { var p = v.play(); if (p && p.catch) p.catch(function () {}); } }
+  apply();
+  if (mq.addEventListener) mq.addEventListener("change", apply);
+})();
+
 if (!document.querySelector('script[src="js/audio.js"]')) {
   var s = document.createElement("script");
   s.src = "js/audio.js";

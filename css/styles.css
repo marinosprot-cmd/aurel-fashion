@@ -318,3 +318,27 @@ footer { padding: 56px 0 32px; border-top: 1px solid var(--line); color: var(--m
 }
 /* Anchor targets whose first element is an image: keep it clear of the sticky bar */
 #houses-stories, #lookbook { scroll-margin-top: 60px; }
+
+/* HERO VIDEO 2026-10-06 — background loop replaces hero slideshow (lookbook untouched) */
+.hero-cover > .hero-video {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center center;
+  z-index: 0; pointer-events: none; display: block;
+}
+/* full-bleed readability gradient (the .wrap-width overlay gradient left visible side bands over video) */
+.hero-cover > .hero-overlay { background: none; }
+.hero-cover::before {
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(90deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.25) 45%, rgba(0,0,0,0) 70%),
+              linear-gradient(0deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 45%);
+}
+@media (max-width: 980px) {
+  .hero-cover::before {
+    background: linear-gradient(0deg, rgba(0,0,0,.72) 0%, rgba(0,0,0,.45) 40%, rgba(0,0,0,0) 72%);
+  }
+}
+.hero-cover .kicker, .hero-cover .hero-copy p { text-shadow: 0 1px 12px rgba(0,0,0,.45); }
+@media (prefers-reduced-motion: reduce) {
+  .hero-cover > .hero-video { display: none; }
+  .hero-cover { background: #1a1613 url("../images/hero-poster.jpg") center center / cover no-repeat; }
+}
