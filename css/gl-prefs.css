@@ -47,3 +47,6 @@
 .legal dt { color: var(--muted); }
 .legal .cta { margin-top: 14px; }
 @media (max-width: 640px) { .legal { padding: 40px 0 64px; } .legal dl { grid-template-columns: 1fr; gap: 2px; } .legal dd { margin-bottom: 12px; } }
+
+/* Awin banner images stay hidden (space reserved) until affiliate consent loads them */
+img[data-consent-img][data-src] { visibility: hidden; }
