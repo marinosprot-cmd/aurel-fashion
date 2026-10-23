@@ -11,8 +11,8 @@
   #stores { padding: 72px 0 88px; }
   #stores .stores-head { margin-bottom: 32px; }
   #stores .stores-head h2 { font-size: 34px; }
-  .store-card { padding: 44px 24px; }
-  .store-card h3 { font-size: 28px; }
+  .store-card { padding: 40px 20px; }
+  .store-card h3 { font-size: 26px; letter-spacing: .08em; overflow-wrap: anywhere; }
 }
 
 /* Anchor target for nav/inline links; offset for sticky header / mobile nav */
@@ -27,8 +27,8 @@
 }
 
 /* Pitod (Awin 29337) next to T.LUXY — draft */
-.store-grid { display: grid; grid-template-columns: 1fr; gap: 24px; justify-items: center; }
-.store-grid .store-card { width: 100%; }
+.store-grid { display: grid; grid-template-columns: 1fr; gap: 24px; justify-items: center; min-width: 0; }
+.store-grid .store-card { width: 100%; max-width: 100%; min-width: 0; }
 .store-card-img { display: block; width: 100%; height: 200px; object-fit: cover; object-position: center 30%; margin: 0 0 28px; }
 @media (min-width: 900px) {
   .store-grid { grid-template-columns: repeat(2, minmax(0, 440px)); justify-content: center; align-items: stretch; }

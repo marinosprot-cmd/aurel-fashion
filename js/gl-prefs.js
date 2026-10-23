@@ -33,15 +33,9 @@
     });
   }
 
-  var FONTS_URL = "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@300;400;500;600&display=swap";
-  /* Third-party Google Fonts and Awin banner images load only after the visitor accepts (analytics or affiliate). */
+  /* Typefaces are self-hosted in css/styles.css. Awin banner images still load only after affiliate consent. */
   function loadThirdParty() {
     if (!consent) return;
-    if ((consent.analytics || consent.affiliate) && !document.getElementById("gl-gfonts")) {
-      var l = document.createElement("link");
-      l.id = "gl-gfonts"; l.rel = "stylesheet"; l.href = FONTS_URL;
-      document.head.appendChild(l);
-    }
     if (consent.affiliate) {
       document.querySelectorAll('img[data-consent-img="affiliate"][data-src]').forEach(function (im) {
         im.src = im.getAttribute("data-src");
